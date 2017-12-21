@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>CHAPALA, JALISCO</name>
+    <description/>
+    <NetworkLink>
+      <name>CHAPALA, JALISCO</name>
+      <Link>
+        <href><![CDATA[http://www.google.com/maps/d/u/2/kml?forcekml=1&mid=1Q_yjIooW4ThVYuGFXFEPn_OqLB8]]></href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>

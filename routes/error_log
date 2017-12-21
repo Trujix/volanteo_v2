@@ -1,0 +1,924 @@
+[12-Nov-2016 17:05:21 UTC] PHP Warning:  require(clases/mysql.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php on line 5
+[12-Nov-2016 17:05:21 UTC] PHP Warning:  require(clases/mysql.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php on line 5
+[12-Nov-2016 17:05:21 UTC] PHP Fatal error:  require(): Failed opening required 'clases/mysql.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php on line 5
+[12-Nov-2016 17:22:46 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_volanteo' in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 35
+[12-Nov-2016 17:22:46 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 39
+[12-Nov-2016 17:22:46 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 41
+[12-Nov-2016 17:23:46 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 17:23:46 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(17): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 17:33:11 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_volanteo' in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 35
+[12-Nov-2016 17:33:11 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 39
+[12-Nov-2016 17:33:11 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 41
+[12-Nov-2016 17:34:12 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 17:34:12 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 17:37:38 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_volanteo' in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 35
+[12-Nov-2016 17:37:38 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 39
+[12-Nov-2016 17:37:38 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 41
+[12-Nov-2016 17:38:38 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 17:38:38 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:01:04 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:01:04 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:04:30 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:04:30 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:05:30 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:05:30 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:05:46 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:05:46 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:07:03 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:07:03 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:09:54 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:09:54 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:11:01 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:11:01 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:47
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(47): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(9): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 47
+[12-Nov-2016 20:12:25 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[12-Nov-2016 20:12:29 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[12-Nov-2016 20:14:54 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[12-Nov-2016 20:16:25 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 93
+[12-Nov-2016 20:16:25 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:93
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(93): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(17): Domgeo->initialize()
+#2 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(9): Domgeo->__construct()
+#3 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#4 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 93
+[13-Nov-2016 02:12:01 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:12:04 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:12:19 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:12:27 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:12:30 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:12:42 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:13:27 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:13:28 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:13:34 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:14:15 UTC] PHP Fatal error:  Call to a member function consultaEstado() on null in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 101
+[13-Nov-2016 02:24:24 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 8
+[13-Nov-2016 02:24:33 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 8
+[13-Nov-2016 03:32:27 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 7
+[13-Nov-2016 03:32:27 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:7
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(7): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(33): Domgeo->getEdos()
+#2 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#3 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 7
+[13-Nov-2016 03:44:05 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 7
+[13-Nov-2016 03:44:05 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php:7
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php(7): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(33): Domgeo->getEdos()
+#2 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#3 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/clases/Domgeo.php on line 7
+[13-Nov-2016 03:53:28 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php on line 12
+[13-Nov-2016 03:53:28 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl' : failed to load external entity "http://zonazeroapp.no-ip.biz:81/imasd/wsdomgeo/wsdomGeo.php?wsdl"
+ in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php:12
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(12): SoapClient->SoapClient('http://zonazero...')
+#1 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#2 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php on line 12
+[13-Nov-2016 03:56:35 UTC] PHP Fatal error:  SoapClient::SoapClient(): Invalid parameters in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php on line 15
+[13-Nov-2016 03:56:35 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] SoapClient::SoapClient(): Invalid parameters in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php:15
+Stack trace:
+#0 /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php(15): SoapClient->SoapClient(NULL, NULL)
+#1 /home/tecnol24/public_html/angel/volanteo/clientes.php(1): include('/home/tecnol24/...')
+#2 {main}
+  thrown in /home/tecnol24/public_html/angel/volanteo/includes/header_clientes.php on line 15
+[22-Apr-2017 17:01:04 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 18
+[22-Apr-2017 17:01:04 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 20
+[22-Apr-2017 17:01:04 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 27
+[22-Apr-2017 17:01:04 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on string in /home/tecnol24/public_html/angel/volanteo/clases/Mysql.php on line 52
+[27-Apr-2017 16:32:00 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:32:00 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:32:00 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:32:11 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:32:11 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:32:11 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:34:02 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:34:02 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:34:02 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:35:23 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:35:23 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:35:23 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:36:38 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:36:38 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:36:38 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:37:08 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:37:08 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:37:08 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:38:53 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:38:53 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:38:53 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:49:54 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:49:55 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:49:55 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:50:10 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:50:10 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:50:10 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:50:36 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:50:36 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:50:36 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:51:30 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:51:30 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 16:51:30 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 17:14:41 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 17:14:41 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 17:14:41 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:04:05 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:04:05 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:04:05 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:04:25 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:04:25 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:04:25 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:05:09 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:05:09 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:05:09 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:07:38 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:07:38 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:07:38 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:07:40 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:07:40 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 18:07:40 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:04:13 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:04:14 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:04:14 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:33:32 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:33:32 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:33:32 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:33:40 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:33:40 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:33:40 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:36:55 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:36:55 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:36:55 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:37:26 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:37:26 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:37:26 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:39:50 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:39:50 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:39:50 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:39:53 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:39:53 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:39:53 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:10 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:10 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:10 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:17 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:17 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:17 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:19 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:19 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:19 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:28 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:28 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:28 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:30 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:30 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:40:30 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:41:59 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:41:59 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:41:59 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:43:33 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:43:33 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:43:33 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:44:42 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:44:42 UTC] PHP Warning:  require(../clases/Seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[27-Apr-2017 22:44:42 UTC] PHP Fatal error:  require(): Failed opening required '../clases/Seguimiento.php' (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/angel/volanteo/routes/routeSeguimiento.php on line 5
+[08-May-2017 23:52:29 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[08-May-2017 23:52:30 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[08-May-2017 23:52:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[08-May-2017 23:52:30 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[17-May-2017 21:37:28 UTC] PHP Warning:  Illegal string offset 'idCliente' in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 544
+[17-May-2017 21:37:28 UTC] PHP Warning:  Illegal string offset 'accion' in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 545
+[17-May-2017 21:37:28 UTC] PHP Warning:  Illegal string offset 'contenido' in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 582
+[17-May-2017 22:11:20 UTC] PHP Warning:  Illegal string offset 'idCliente' in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 544
+[17-May-2017 22:11:21 UTC] PHP Warning:  Illegal string offset 'accion' in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 545
+[17-May-2017 22:11:21 UTC] PHP Warning:  Illegal string offset 'contenido' in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 582
+[17-May-2017 23:38:17 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[17-May-2017 23:38:17 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[17-May-2017 23:38:17 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[17-May-2017 23:38:17 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[19-May-2017 15:39:29 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/tecnol24/public_html/manuel/volanteo/clases/ConfigTrabajo.php on line 90
+[02-Jun-2017 00:37:53 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[02-Jun-2017 00:37:53 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[02-Jun-2017 00:37:53 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[02-Jun-2017 00:37:53 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[09-Jun-2017 22:49:30 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[09-Jun-2017 22:49:30 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[09-Jun-2017 22:49:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[09-Jun-2017 22:49:30 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[14-Jun-2017 16:37:19 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:37:29 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:37:38 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:42:22 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:42:27 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:44:22 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:45:05 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:45:56 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 16:56:30 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:03:18 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:03:26 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:06:40 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:07:01 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:07:31 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:10:30 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:10:43 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:14:01 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:16:32 UTC] PHP Warning:  mysqli::query(): Empty query in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 27
+[14-Jun-2017 17:32:55 UTC] PHP Warning:  file_get_contents(../plugins/boostrapmail/css.txt): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 99
+[14-Jun-2017 17:32:55 UTC] PHP Fatal error:  Call to undefined method Vigencia::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 102
+[14-Jun-2017 17:41:15 UTC] PHP Fatal error:  Call to undefined method Vigencia::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 102
+[14-Jun-2017 17:42:34 UTC] PHP Fatal error:  Call to undefined method Trabajo::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 605
+[14-Jun-2017 17:46:25 UTC] PHP Fatal error:  Call to undefined method Trabajo::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 605
+[14-Jun-2017 17:46:42 UTC] PHP Fatal error:  Call to undefined method Trabajo::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 601
+[14-Jun-2017 17:48:47 UTC] PHP Fatal error:  Call to undefined method Vigencia::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 102
+[14-Jun-2017 17:48:53 UTC] PHP Fatal error:  Call to undefined method Trabajo::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 601
+[14-Jun-2017 17:49:16 UTC] PHP Fatal error:  Call to undefined method Trabajo::enviarMail() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 601
+[14-Jun-2017 20:21:39 UTC] PHP Fatal error:  Call to undefined function edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/ConfigTrabajo.php on line 214
+[14-Jun-2017 20:38:11 UTC] PHP Fatal error:  Call to undefined method Domgeo::getEdo() in /home/tecnol24/public_html/manuel/volanteo/clases/Provtrabajo.php on line 41
+[14-Jun-2017 20:39:51 UTC] PHP Fatal error:  Call to undefined method Domgeo::getEdo() in /home/tecnol24/public_html/manuel/volanteo/clases/Provtrabajo.php on line 41
+[14-Jun-2017 20:42:10 UTC] PHP Fatal error:  Call to undefined method Provtrabajo::getEdo() in /home/tecnol24/public_html/manuel/volanteo/clases/Provtrabajo.php on line 41
+[14-Jun-2017 20:43:29 UTC] PHP Fatal error:  Call to undefined method Provtrabajo::getEdo() in /home/tecnol24/public_html/manuel/volanteo/clases/Provtrabajo.php on line 41
+[22-Jun-2017 19:42:07 UTC] PHP Fatal error:  Cannot redeclare PHPMailerAutoload() (previously declared in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php:24) in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php on line 24
+[22-Jun-2017 19:48:32 UTC] PHP Fatal error:  Cannot redeclare PHPMailerAutoload() (previously declared in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php:24) in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php on line 24
+[22-Jun-2017 20:06:41 UTC] PHP Fatal error:  Cannot redeclare PHPMailerAutoload() (previously declared in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php:24) in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php on line 24
+[22-Jun-2017 20:09:13 UTC] PHP Fatal error:  Cannot redeclare PHPMailerAutoload() (previously declared in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php:24) in /home/tecnol24/public_html/manuel/volanteo/plugins/PHPMailer-maste/PHPMailerAutoload.php on line 24
+[23-Jun-2017 00:36:18 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[23-Jun-2017 00:36:18 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[23-Jun-2017 00:36:18 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[23-Jun-2017 00:36:18 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[23-Jun-2017 09:36:22 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:36:26 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:37:33 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:37:46 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:39:10 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:39:40 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:39:47 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:43:29 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:44:07 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:44:08 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:44:21 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[23-Jun-2017 09:45:34 UTC] PHP Fatal error:  Cannot redeclare Trabajo::edicionMailCliente() in /home/tecnol24/public_html/manuel/volanteo/clases/Trabajo.php on line 767
+[24-Jun-2017 07:19:47 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 99
+[24-Jun-2017 07:20:28 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 99
+[24-Jun-2017 07:20:32 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 99
+[24-Jun-2017 07:23:20 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/tecnol24/public_html/manuel/volanteo/clases/Vigencia.php on line 99
+[24-Jun-2017 18:30:08 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[24-Jun-2017 18:30:08 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[24-Jun-2017 18:30:08 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[24-Jun-2017 18:30:08 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[24-Jun-2017 18:51:53 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[24-Jun-2017 18:51:53 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[24-Jun-2017 18:51:53 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[24-Jun-2017 18:51:53 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[26-Jun-2017 14:41:48 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[26-Jun-2017 14:41:48 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[26-Jun-2017 14:41:48 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[26-Jun-2017 14:41:48 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[28-Jun-2017 16:38:51 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[28-Jun-2017 16:38:51 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[28-Jun-2017 16:38:51 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[28-Jun-2017 16:38:51 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[01-Jul-2017 01:10:28 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[01-Jul-2017 01:10:28 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[01-Jul-2017 01:10:28 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[01-Jul-2017 01:10:28 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[03-Jul-2017 19:03:56 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[04-Jul-2017 01:24:50 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[04-Jul-2017 01:28:43 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[04-Jul-2017 01:54:47 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[04-Jul-2017 03:05:18 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[04-Jul-2017 16:59:49 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[04-Jul-2017 17:08:51 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:10:15 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:11:05 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:11:41 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:11:59 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:13:14 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:13:32 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:13:45 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 20:14:04 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 22:03:06 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 22:20:42 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 22:50:15 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 22:50:22 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 23:48:42 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 23:49:37 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 23:51:42 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[05-Jul-2017 23:51:50 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[06-Jul-2017 00:22:13 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:31:29 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:31:39 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:31:41 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:32:40 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:36:28 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:39:27 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:41:57 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 00:42:05 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[07-Jul-2017 17:22:02 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[08-Jul-2017 00:11:15 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[11-Jul-2017 17:24:26 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[11-Jul-2017 21:55:38 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[11-Jul-2017 21:55:38 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[11-Jul-2017 21:55:38 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[11-Jul-2017 21:55:38 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[11-Jul-2017 21:56:04 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[11-Jul-2017 21:56:04 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[11-Jul-2017 21:56:04 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[11-Jul-2017 21:56:04 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[11-Jul-2017 21:56:07 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[11-Jul-2017 21:56:07 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[11-Jul-2017 21:56:07 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[11-Jul-2017 21:56:07 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[11-Jul-2017 21:56:13 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[11-Jul-2017 21:58:00 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[11-Jul-2017 21:58:00 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[11-Jul-2017 21:58:00 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[11-Jul-2017 21:58:00 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 00:43:11 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 00:43:11 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 00:43:11 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 00:43:11 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 00:43:14 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 00:43:14 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 00:43:14 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 00:43:14 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 00:43:15 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 00:43:15 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 00:43:15 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 00:43:15 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 14:54:11 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 14:54:11 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 14:54:11 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 14:54:11 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 15:07:13 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[25-Jul-2017 15:07:27 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[25-Jul-2017 15:07:37 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo/clases/Mysql.php on line 36
+[25-Jul-2017 15:07:58 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 15:07:58 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 15:07:58 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 15:07:58 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 16:27:41 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 16:27:41 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 16:27:41 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 16:27:41 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 16:29:06 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 16:29:06 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 16:29:06 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 16:29:06 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 16:29:09 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 16:29:09 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 16:29:09 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 16:29:09 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 16:47:02 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 16:47:02 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 16:47:02 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 16:47:02 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[25-Jul-2017 17:04:56 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[25-Jul-2017 17:04:56 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[25-Jul-2017 17:04:56 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[25-Jul-2017 17:04:56 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[26-Jul-2017 22:09:23 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[26-Jul-2017 22:09:23 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[26-Jul-2017 22:09:23 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[26-Jul-2017 22:09:23 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[26-Jul-2017 22:09:26 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[26-Jul-2017 22:09:26 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[26-Jul-2017 22:09:26 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[26-Jul-2017 22:09:26 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:07:36 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:07:36 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:07:36 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:07:36 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:07:40 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:07:40 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:07:40 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:07:40 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:07:42 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:07:42 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:07:42 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:07:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:07:45 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:07:45 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:07:45 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:07:45 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:30:37 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:30:37 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:30:37 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:30:37 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:35:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:35:33 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:35:33 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:35:33 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:36:20 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:36:20 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:36:20 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:36:20 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:39:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:39:35 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:39:35 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:39:35 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 00:56:16 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 00:56:17 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 00:56:17 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 00:56:17 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 01:04:55 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 01:04:55 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 01:04:55 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 01:04:55 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 04:08:11 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 04:08:12 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 04:08:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 04:08:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[27-Jul-2017 04:18:09 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 16
+[27-Jul-2017 04:18:09 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 18
+[27-Jul-2017 04:18:09 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 19
+[27-Jul-2017 04:18:09 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo/clases/MysqlEncuesta.php on line 27
+[28-Jul-2017 08:42:42 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[28-Jul-2017 08:45:54 UTC] PHP Fatal error:  Cannot redeclare Trabajo::editarTrabajo() in /home/tecnol24/public_html/manuel/volanteo2/clases/Trabajo.php on line 546
+[28-Jul-2017 08:45:58 UTC] PHP Fatal error:  Cannot redeclare Trabajo::editarTrabajo() in /home/tecnol24/public_html/manuel/volanteo2/clases/Trabajo.php on line 546
+[28-Jul-2017 08:46:17 UTC] PHP Fatal error:  Cannot redeclare Trabajo::editarTrabajo() in /home/tecnol24/public_html/manuel/volanteo2/clases/Trabajo.php on line 546
+[28-Jul-2017 08:46:21 UTC] PHP Fatal error:  Cannot redeclare Trabajo::editarTrabajo() in /home/tecnol24/public_html/manuel/volanteo2/clases/Trabajo.php on line 546
+[28-Jul-2017 08:46:24 UTC] PHP Fatal error:  Cannot redeclare Trabajo::editarTrabajo() in /home/tecnol24/public_html/manuel/volanteo2/clases/Trabajo.php on line 546
+[29-Jul-2017 00:58:24 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[29-Jul-2017 00:58:24 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[29-Jul-2017 00:58:24 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[29-Jul-2017 00:58:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[09-Aug-2017 08:21:59 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[09-Aug-2017 08:21:59 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[09-Aug-2017 08:21:59 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[09-Aug-2017 08:21:59 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[10-Aug-2017 15:08:28 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:08:35 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:02 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:09 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:12 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:13 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:13 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:15 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:15 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:15 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:09:16 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:10:35 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:10:41 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:11:04 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:11:13 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:12:12 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:21:21 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:21:39 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:21:43 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:21:48 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:33:33 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:38:18 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 15:57:03 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 16:10:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[10-Aug-2017 16:10:12 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[10-Aug-2017 16:10:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[10-Aug-2017 16:10:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[10-Aug-2017 18:44:00 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[10-Aug-2017 18:44:00 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[10-Aug-2017 18:44:00 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[10-Aug-2017 18:44:00 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[10-Aug-2017 18:48:44 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 19:11:09 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[10-Aug-2017 19:11:09 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[10-Aug-2017 19:11:09 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[10-Aug-2017 19:11:09 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[10-Aug-2017 21:40:28 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[10-Aug-2017 21:40:28 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[10-Aug-2017 21:40:28 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[10-Aug-2017 21:40:28 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[10-Aug-2017 21:44:50 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 21:45:30 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 21:45:37 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 21:46:06 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 21:46:12 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[10-Aug-2017 22:42:36 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[10-Aug-2017 22:42:36 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[10-Aug-2017 22:42:36 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[10-Aug-2017 22:42:36 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[10-Aug-2017 23:04:15 UTC] PHP Strict Standards:  mysqli::next_result(): There is no next result set. Please, call mysqli_more_results()/mysqli::more_results() to check whether to call this function/method in /home/tecnol24/public_html/manuel/volanteo2/clases/Mysql.php on line 36
+[11-Aug-2017 15:29:11 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'tecnol24_angel'@'localhost' to database 'tecnol24_encuestas' in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 16
+[11-Aug-2017 15:29:11 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 18
+[11-Aug-2017 15:29:11 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 19
+[11-Aug-2017 15:29:11 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/tecnol24/public_html/manuel/volanteo2/clases/MysqlEncuesta.php on line 27
+[08-Sep-2017 03:58:53 UTC] PHP Fatal error:  Call to a member function getEstadistica() on null in /home/tecnol24/public_html/manuel/volanteo2/routes/routeFormcliente.php on line 29
+[08-Sep-2017 04:00:37 UTC] PHP Fatal error:  Call to a member function getEstadistica() on null in /home/tecnol24/public_html/manuel/volanteo2/routes/routeFormcliente.php on line 29
+[08-Sep-2017 04:01:23 UTC] PHP Fatal error:  Call to a member function getEstadistica() on null in /home/tecnol24/public_html/manuel/volanteo2/routes/routeFormcliente.php on line 29
+[08-Sep-2017 04:07:38 UTC] PHP Fatal error:  Call to a member function getEstadistica() on null in /home/tecnol24/public_html/manuel/volanteo2/routes/routeFormcliente.php on line 29
+[08-Sep-2017 04:09:06 UTC] PHP Fatal error:  Call to a member function getEstadistica() on null in /home/tecnol24/public_html/manuel/volanteo2/routes/routeFormcliente.php on line 29
+[16-Sep-2017 05:31:12 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 16
+[16-Sep-2017 05:31:12 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 17
+[16-Sep-2017 05:31:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 18
+[16-Sep-2017 05:31:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 25
+[16-Sep-2017 22:57:18 UTC] PHP Notice:  Undefined variable: mails in /home/grupoher/public_html/volanteo/v2/clases/Main.php on line 492
+[16-Sep-2017 23:04:37 UTC] PHP Notice:  Undefined variable: mails in /home/grupoher/public_html/volanteo/v2/clases/Main.php on line 492
+[16-Sep-2017 23:05:14 UTC] PHP Notice:  Undefined variable: mails in /home/grupoher/public_html/volanteo/v2/clases/Main.php on line 492
+[21-Sep-2017 21:42:33 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[21-Sep-2017 21:42:33 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[21-Sep-2017 21:42:33 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[21-Sep-2017 21:42:33 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[27-Sep-2017 00:03:44 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[27-Sep-2017 00:03:44 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[27-Sep-2017 00:03:44 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[27-Sep-2017 00:03:44 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[04-Oct-2017 22:06:38 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[04-Oct-2017 22:06:38 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[04-Oct-2017 22:06:38 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[04-Oct-2017 22:06:38 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[06-Oct-2017 22:08:44 UTC] PHP Notice:  Undefined offset: 1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 500
+[06-Oct-2017 22:43:12 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[06-Oct-2017 22:43:12 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[06-Oct-2017 22:43:12 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[06-Oct-2017 22:43:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[06-Oct-2017 23:22:30 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[06-Oct-2017 23:22:30 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[06-Oct-2017 23:22:30 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[06-Oct-2017 23:22:30 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[06-Oct-2017 23:36:57 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[06-Oct-2017 23:36:57 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[06-Oct-2017 23:36:57 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[06-Oct-2017 23:36:57 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[06-Oct-2017 23:38:00 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[06-Oct-2017 23:38:00 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[06-Oct-2017 23:38:00 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[06-Oct-2017 23:38:00 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[06-Oct-2017 23:38:03 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[06-Oct-2017 23:38:03 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[06-Oct-2017 23:38:03 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[06-Oct-2017 23:38:03 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[07-Oct-2017 00:40:01 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 256
+[07-Oct-2017 00:50:49 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 8
+[07-Oct-2017 00:53:27 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 8
+[07-Oct-2017 03:36:43 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 174
+[07-Oct-2017 03:46:54 UTC] PHP Notice:  Undefined offset: 2 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 207
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[07-Oct-2017 04:02:34 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 259
+[08-Oct-2017 05:29:55 UTC] PHP Notice:  Array to string conversion in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 209
+[08-Oct-2017 06:43:42 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 06:43:42 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 06:45:14 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 06:45:14 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:11:28 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:11:28 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 228
+[08-Oct-2017 07:11:28 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 07:11:28 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:11:28 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 228
+[08-Oct-2017 07:11:28 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 07:15:45 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:15:45 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 228
+[08-Oct-2017 07:15:45 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 231
+[08-Oct-2017 07:15:45 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:15:45 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 228
+[08-Oct-2017 07:15:45 UTC] PHP Notice:  Undefined index: id in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 231
+[08-Oct-2017 07:19:47 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:19:47 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:21:44 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:21:44 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:36:17 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:36:17 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:36:17 UTC] PHP Notice:  Undefined offset: 2 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 238
+[08-Oct-2017 07:37:05 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:37:05 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:38:44 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:38:44 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:38:44 UTC] PHP Notice:  Undefined offset: 2 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 239
+[08-Oct-2017 07:43:32 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:43:32 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:51:34 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 07:51:34 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:01:39 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:01:39 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:08:39 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:08:39 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:11:27 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:11:27 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:14:37 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:14:37 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 221
+[08-Oct-2017 08:38:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:38:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:39:58 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:39:58 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:42:06 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:42:06 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:43:29 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:43:29 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:49:10 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:49:10 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:49:48 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:49:48 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:51:04 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:51:04 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:52:03 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:52:03 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:54:13 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:54:13 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:55:10 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:55:10 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:59:24 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 08:59:24 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:01:42 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:01:42 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:04:49 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:04:49 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:14:27 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:14:27 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:17:38 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:17:38 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:19:33 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:19:33 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:27:16 UTC] PHP Notice:  Undefined offset: 2 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 549
+[08-Oct-2017 09:27:16 UTC] PHP Notice:  Undefined offset: 1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 549
+[08-Oct-2017 09:27:51 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:27:51 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 226
+[08-Oct-2017 09:30:46 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 227
+[08-Oct-2017 09:30:46 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 227
+[08-Oct-2017 22:30:41 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 227
+[08-Oct-2017 22:30:41 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 227
+[08-Oct-2017 22:31:47 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 227
+[08-Oct-2017 22:31:47 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 227
+[08-Oct-2017 22:44:09 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:44:09 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:48:45 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:48:45 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:50:51 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:50:51 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:55:11 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:55:11 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:55:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 22:55:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:01:39 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:01:39 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:01:39 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 241
+[08-Oct-2017 23:03:28 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:03:28 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:13:21 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:13:21 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:14:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:14:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:23:05 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:23:05 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:23:48 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:23:48 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:24:22 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:24:22 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:27:22 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:27:22 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:33:11 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[08-Oct-2017 23:33:11 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:17:24 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:17:24 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:17:24 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:18:20 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:18:20 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:18:20 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:26:09 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:26:09 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:26:09 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:26:09 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 357
+[09-Oct-2017 00:28:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:28:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:28:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:28:59 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 357
+[09-Oct-2017 00:31:35 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:31:35 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:31:35 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:31:35 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:31:35 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 357
+[09-Oct-2017 00:33:08 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:33:08 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:33:08 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:33:08 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:33:08 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 357
+[09-Oct-2017 00:34:25 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:34:25 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:34:25 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 357
+[09-Oct-2017 00:36:25 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:36:25 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:36:25 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:36:25 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:36:25 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 357
+[09-Oct-2017 00:37:10 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:37:10 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:37:10 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:37:10 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:38:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:38:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:38:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:38:26 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:38:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 358
+[09-Oct-2017 00:40:00 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:40:00 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:40:00 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:40:00 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:40:00 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp3' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 358
+[09-Oct-2017 00:42:53 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:42:53 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:42:53 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:42:53 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 398
+[09-Oct-2017 00:44:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:44:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:44:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:44:26 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:44:26 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 358
+[09-Oct-2017 00:44:26 UTC] PHP Notice:  Undefined variable: b in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 358
+[09-Oct-2017 00:44:26 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 358
+[09-Oct-2017 00:44:26 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, second array member is not a valid method in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 358
+[09-Oct-2017 00:48:40 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:48:40 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:48:40 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:48:40 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:48:40 UTC] PHP Warning:  array_multisort(): Argument #1 is expected to be an array or a sort flag in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 360
+[09-Oct-2017 00:52:08 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:52:08 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:52:08 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:52:08 UTC] PHP Notice:  Trying to get property of non-object in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 356
+[09-Oct-2017 00:53:13 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:53:13 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:53:13 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:53:13 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:53:49 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:53:49 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 230
+[09-Oct-2017 00:53:49 UTC] PHP Warning:  usort() expects parameter 2 to be a valid callback, class 'Trabajo' does not have a method 'cmp2' in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 296
+[09-Oct-2017 00:53:49 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:56:26 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:57:44 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 00:58:07 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 01:05:25 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 01:07:50 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 01:14:08 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 01:15:34 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 14:44:19 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 14:45:57 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 14:48:55 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 14:49:34 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 14:59:10 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 15:00:48 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 15:01:42 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 15:03:08 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 15:03:44 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 15:34:58 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 15:42:15 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 15:49:51 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[09-Oct-2017 16:00:12 UTC] PHP Notice:  Undefined offset: -1 in /home/grupoher/public_html/volanteo/v2/clases/Trabajo.php on line 324
+[14-Oct-2017 15:57:32 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[14-Oct-2017 15:57:32 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[14-Oct-2017 15:57:32 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[14-Oct-2017 15:57:32 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[19-Oct-2017 15:24:44 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[19-Oct-2017 15:24:44 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[19-Oct-2017 15:24:44 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[19-Oct-2017 15:24:44 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[10-Nov-2017 23:07:08 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[10-Nov-2017 23:07:08 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[10-Nov-2017 23:07:08 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[10-Nov-2017 23:07:08 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27
+[15-Nov-2017 18:03:24 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 16
+[15-Nov-2017 18:03:24 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 18
+[15-Nov-2017 18:03:24 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 19
+[15-Nov-2017 18:03:24 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlEncuesta.php on line 27

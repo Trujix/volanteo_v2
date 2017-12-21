@@ -1,0 +1,15 @@
+.btn-primary{
+	/*background: rgb(139, 104, 199);*/
+	background: rgb(103, 58, 183);
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover{
+	/*background-color: rgb(139, 104, 219) !important;*/
+	background-color: rgb(103, 58, 200) !important;
+}
+
+.btn-primary.active {
+    /*background-color: #0b51c5!important;*/
+    /*#9f80d7*/
+    background-color: #300877!important;
+}

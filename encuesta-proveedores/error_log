@@ -1,0 +1,26 @@
+[06-Oct-2017 22:43:47 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 15
+[06-Oct-2017 22:43:47 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 16
+[06-Oct-2017 22:43:47 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 23
+[06-Oct-2017 22:45:00 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 15
+[06-Oct-2017 22:45:00 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 16
+[06-Oct-2017 22:45:00 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 23
+[06-Oct-2017 22:45:10 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 15
+[06-Oct-2017 22:45:10 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 16
+[06-Oct-2017 22:45:10 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 23
+[06-Oct-2017 22:47:05 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 15
+[06-Oct-2017 22:47:05 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 16
+[06-Oct-2017 22:47:05 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 23
+[06-Oct-2017 23:37:46 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 15
+[06-Oct-2017 23:37:46 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 16
+[06-Oct-2017 23:37:46 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 23
+[14-Oct-2017 15:58:02 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 15
+[14-Oct-2017 15:58:02 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 16
+[14-Oct-2017 15:58:02 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 23
+[17-Oct-2017 03:25:34 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 15
+[17-Oct-2017 03:25:34 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 16
+[17-Oct-2017 03:25:34 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/includes/header_encuesta.php on line 8
+[17-Oct-2017 03:25:34 UTC] PHP Notice:  Undefined index: email in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/includes/header_encuesta.php on line 9
+[17-Oct-2017 03:25:34 UTC] PHP Notice:  Undefined index: facebook in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/includes/header_encuesta.php on line 10
+[17-Oct-2017 03:25:34 UTC] PHP Notice:  Undefined index: telefono in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/includes/header_encuesta.php on line 11
+[17-Oct-2017 03:25:34 UTC] PHP Notice:  Undefined index: address in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/includes/header_encuesta.php on line 12
+[17-Oct-2017 03:25:34 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/encuesta-proveedores/clases/MySQL.php on line 23

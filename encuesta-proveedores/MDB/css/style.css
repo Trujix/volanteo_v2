@@ -1,0 +1,57 @@
+.custom-padding{
+	padding: 2rem 1rem 1rem 1rem !important;
+}
+
+.myhr{
+	margin-bottom: 35px !important;
+	margin-top: 30px !important;
+}
+
+.header{
+	height: 200px; 
+	background-color: rgb(103, 58, 183);
+	border-color: rgb(103, 58, 183);
+	/*background-image: url("../../heraldos.jpg");*/
+	/*background-repeat:no-repeat;*/
+	/*background-position: center center;*/
+}
+
+.mi-container{
+	width: 80%;
+	/*overflow-y: auto;*/
+	/*overflow-x: auto;*/
+}
+
+.mi-card{
+	position: inherit; 
+	top: -80px;
+}
+
+.title{
+	margin-top: 8px;
+}
+
+.div-pregunta{
+	margin-bottom: 40px;
+}
+
+.pregunta{
+	font-weight: 300 !important;
+}
+
+.mi-radio{
+	margin-right: 20px !important;
+}
+
+.div-save{
+	margin-top: 5%;
+}
+
+.header-card{
+	/*background-color: rgb(139, 104, 199) !important;*/
+	background-color: rgb(103, 58, 183) !important;
+}
+
+body{
+	background-color: #f8f8f8;
+}

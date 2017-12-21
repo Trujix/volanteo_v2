@@ -1,0 +1,122 @@
+[09-May-2017 18:14:14 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:14 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:14 UTC] PHP Warning:  include(): Failed opening 'includes/header_seguimiento.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:17 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:17 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:17 UTC] PHP Warning:  include(): Failed opening 'includes/header_seguimiento.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:25 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:25 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:25 UTC] PHP Warning:  include(): Failed opening 'includes/header_seguimiento.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:30 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:30 UTC] PHP Warning:  include(includes/header_seguimiento.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[09-May-2017 18:14:30 UTC] PHP Warning:  include(): Failed opening 'includes/header_seguimiento.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo/seguimiento.php on line 1
+[27-Jul-2017 22:05:50 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:05:50 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:05:50 UTC] PHP Warning:  include(): Failed opening 'includes/header_index.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:01 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:01 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:01 UTC] PHP Warning:  include(): Failed opening 'includes/header_index.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:14 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:14 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:14 UTC] PHP Warning:  include(): Failed opening 'includes/header_index.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:24 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:24 UTC] PHP Warning:  include(includes/header_index.php): failed to open stream: No such file or directory in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[27-Jul-2017 22:06:24 UTC] PHP Warning:  include(): Failed opening 'includes/header_index.php' for inclusion (include_path='.;/path/to/php/pear') in /home/tecnol24/public_html/manuel/volanteo2/index.php on line 1
+[16-Sep-2017 05:27:29 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 16
+[16-Sep-2017 05:27:29 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 17
+[16-Sep-2017 05:27:29 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 18
+[16-Sep-2017 05:27:29 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 25
+[16-Sep-2017 05:27:42 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 16
+[16-Sep-2017 05:27:42 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 17
+[16-Sep-2017 05:27:42 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 18
+[16-Sep-2017 05:27:42 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 25
+[16-Sep-2017 05:29:26 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 16
+[16-Sep-2017 05:29:26 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 17
+[16-Sep-2017 05:29:26 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 18
+[16-Sep-2017 05:29:26 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 25
+[16-Sep-2017 05:29:36 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 16
+[16-Sep-2017 05:29:36 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 17
+[16-Sep-2017 05:29:36 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 18
+[16-Sep-2017 05:29:36 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 25
+[16-Sep-2017 05:30:29 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'tecnol24_angel'@'localhost' (using password: YES) in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 16
+[16-Sep-2017 05:30:29 UTC] PHP Warning:  mysqli::autocommit(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 17
+[16-Sep-2017 05:30:29 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 18
+[16-Sep-2017 05:30:29 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/grupoher/public_html/volanteo/v2/clases/MysqlGeo.php on line 25
+[22-Sep-2017 23:45:44 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[22-Sep-2017 23:45:44 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[23-Sep-2017 14:52:45 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[23-Sep-2017 14:52:45 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[23-Sep-2017 16:17:20 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[23-Sep-2017 16:17:20 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[23-Sep-2017 18:19:57 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[23-Sep-2017 18:19:57 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[27-Sep-2017 00:01:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[27-Sep-2017 00:01:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[28-Sep-2017 17:54:25 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[28-Sep-2017 17:54:25 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[04-Oct-2017 22:43:56 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[04-Oct-2017 22:43:56 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[06-Oct-2017 18:33:47 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[06-Oct-2017 18:33:47 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[07-Oct-2017 00:46:55 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[07-Oct-2017 00:46:55 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[07-Oct-2017 18:41:26 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[07-Oct-2017 18:41:26 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Oct-2017 06:49:10 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Oct-2017 06:49:10 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Oct-2017 09:14:26 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Oct-2017 09:14:26 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Oct-2017 09:15:07 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Oct-2017 09:15:07 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Oct-2017 15:57:00 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Oct-2017 15:57:01 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Oct-2017 16:59:28 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Oct-2017 16:59:28 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Oct-2017 17:23:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Oct-2017 17:23:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Oct-2017 17:30:59 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Oct-2017 17:30:59 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Oct-2017 12:31:58 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Oct-2017 12:31:58 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Oct-2017 15:31:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Oct-2017 15:31:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Oct-2017 16:52:05 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Oct-2017 16:52:05 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Oct-2017 22:13:44 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Oct-2017 22:13:44 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Oct-2017 22:14:13 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Oct-2017 22:14:13 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Oct-2017 22:14:18 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Oct-2017 22:14:18 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Oct-2017 22:14:43 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Oct-2017 22:14:43 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[11-Oct-2017 15:28:54 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[11-Oct-2017 15:28:54 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[13-Oct-2017 22:20:43 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[13-Oct-2017 22:20:43 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[14-Oct-2017 04:29:08 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[14-Oct-2017 04:29:08 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[17-Oct-2017 03:25:55 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[17-Oct-2017 03:25:55 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[21-Oct-2017 16:33:12 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[21-Oct-2017 16:33:12 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[21-Oct-2017 16:33:19 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[21-Oct-2017 16:33:19 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[21-Oct-2017 16:34:01 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[21-Oct-2017 16:34:01 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[21-Oct-2017 16:47:15 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[21-Oct-2017 16:47:15 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Nov-2017 10:28:11 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Nov-2017 10:28:11 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Nov-2017 10:28:11 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Nov-2017 10:28:11 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[09-Nov-2017 10:29:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[09-Nov-2017 10:29:09 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[10-Nov-2017 22:13:19 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[10-Nov-2017 22:13:19 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[11-Nov-2017 08:04:37 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[11-Nov-2017 08:04:37 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[11-Nov-2017 08:05:50 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[11-Nov-2017 08:05:50 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11
+[12-Nov-2017 23:04:19 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_left.php on line 19
+[12-Nov-2017 23:04:19 UTC] PHP Notice:  Undefined index: name in /home/grupoher/public_html/volanteo/v2/navigation_top.php on line 11

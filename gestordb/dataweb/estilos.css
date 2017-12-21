@@ -1,0 +1,9 @@
+.divPrincipal{
+	padding-top: 20px;
+	height: 20%;
+}
+#log{
+	max-height: 500px;
+	max-width: 100%;
+	overflow: scroll;
+}
