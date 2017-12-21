@@ -11,7 +11,7 @@
 		}
 
 		public function conect(){
-			$this->dbCon = new mysqli('localhost', 'root', '', 'encuesta-proveedores');
+			$this->dbCon = new mysqli('localhost', 'root', 'mapaches', 'encuesta-proveedores');
 			$this->dbCon->set_charset("utf8");
 
 			if(!$this->dbCon)
