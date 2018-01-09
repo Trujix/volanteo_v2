@@ -136,6 +136,12 @@
 		
 		}
 
+		// :::::::::: ELIMINAR PROVEEDOR DEFINITIVAMENTE ::::::::::::::::
+		// ::::::::::::::::::::: 08 - 18 - 2018 :::::::::::::::::::::::::
+		public function eliminarProveedor($info){
+			return json_encode($this->query("CALL SP_ELIMINARPROVEEDOR($info)"));;
+		}
+
 
 	}
 

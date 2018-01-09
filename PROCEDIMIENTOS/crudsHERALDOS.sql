@@ -245,6 +245,20 @@
 	END $$
 	DELIMITER ;
 
+	-- ============== ELIMINAR DEFINITIVIMANTE al proveedor =======================================================
+	DROP PROCEDURE IF EXISTS SP_ELIMINARPROVEEDOR;
+
+	DELIMITER $$
+
+	CREATE PROCEDURE SP_ELIMINARPROVEEDOR(
+		IN _id INT
+	)
+	BEGIN
+		DELETE FROM proveedores WHERE idproveedor = _id;
+		DELETE FROM zonas WHERE idProveedor = _id;
+	END $$
+	DELIMITER ;
+
 
 	-- ============== Reactivar proveedor =========================================================
 	DROP PROCEDURE IF EXISTS SP_REACTIVAPROVEEDOR;

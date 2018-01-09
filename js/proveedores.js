@@ -360,11 +360,12 @@
 						toast1("Error!", ajaxError, 8000, "error");
 					},
 					success: function(data){
-						if(data == 1)
+						/*if(data == 1)
 							toast1("Felicidades!", success, 8000, "success");
 						else
-							toast1("Error!", ajaxError, 8000, "error");
+							toast1("Error!", ajaxError, 8000, "error");*/
 
+						toast1("Felicidades!", success, 8000, "success");
 						showProveedores();
 					}
 				}); //fin ajax
@@ -379,7 +380,7 @@
 	function deleteProveedor(id){
 		$.confirm({
             title: 'Atencion!',
-            content: '¿Esta seguro que desea dar de baja a este cliente?',
+            content: '¿Esta seguro que desea dar de baja a este proveedor?',
             confirm: function(){
                 $.ajax({
 					url:'routes/routeProveedores.php',
@@ -390,11 +391,12 @@
 						toast1("Error!", ajaxError, 8000, "error");
 					},
 					success: function(data){
-						if(data == 1)
+						/*if(data == 1)
 							toast1("Felicidades!", success, 8000, "success");
 						else
-							toast1("Error!", error+'1', 8000, "error");
+							toast1("Error!", error+'1', 8000, "error");*/
 
+						toast1("Felicidades!", success, 8000, "success");
 						showProveedores();
 					}
 				}); //fin ajax
@@ -404,6 +406,36 @@
             }
         });
 
+	}
+
+	function eliminarProveedor(id){
+		$.confirm({
+            title: 'Atencion!',
+            content: '¿Esta seguro que desea ELIMINAR DEFINITIVAMENTE a este proveedor?',
+            confirm: function(){
+                $.ajax({
+					url:'routes/routeProveedores.php',
+					type:'post',
+					data: {'info': id, action: 'eliminarProveedor'},
+					dataType:'json',
+					error: function(error){
+						toast1("Error!", ajaxError, 8000, "error");
+					},
+					success: function(data){
+						/*if(data == 1)
+							toast1("Felicidades!", success, 8000, "success");
+						else
+							toast1("Error!", error+'1', 8000, "error");*/
+
+						toast1("Felicidades!", success, 8000, "success");
+						showProveedores();
+					}
+				}); //fin ajax
+            },
+            cancel: function(){
+                console.log('false');
+            }
+        });
 	}
 
 	function showProveedores(){

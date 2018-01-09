@@ -42,11 +42,17 @@ function jQueryTable(id_container, headers, data, LimitRow, maxHeight, NameFunc,
 			tbody += '<td>'+
 						'<a href="#" onclick="reactiva'+NameFunc+'('+data[i][0]+')" class="btn btn-success btn-xs">'+
 							'<i class="fa fa-recycle"></i> Reactivar '+
-						'</a>'+
-						'<a href="#" onclick="eliminarCliente('+data[i][0]+')" class="btn btn-warning btn-xs">'+
-							'<i class="fa fa-trash-o"></i> Eliminar Cliente '+
+						'</a>' +
+						'<a href="#" onclick="eliminar'+NameFunc+'('+data[i][0]+')" class="btn btn-warning btn-xs">'+
+							'<i class="fa fa-trash-o"></i> Eliminar '+NameFunc +
 						'</a>'+
 					 '</td>';
+			/*if(NameFunc === "Cliente"){
+				tbody += '<a href="#" onclick="eliminar'+NameFunc+'('+data[i][0]+')" class="btn btn-warning btn-xs">'+
+								'<i class="fa fa-trash-o"></i> Eliminar Cliente '+
+							'</a>'+
+						 '</td>';
+			}*/
 		}
 
 
@@ -81,11 +87,11 @@ function jQueryTableTrabajos(id_container, headers, data, LimitRow, maxHeight, N
 
 	$('#thead'+nivel).empty();
 	$('#thead'+nivel).append(thead);
-
+console.log(data)
 	var tbody = "";
 	var indices = data[0].length;
 	for (var i = 0; i < data.length; i++) {
-		tbody += '<tr data-toggle="tooltip" title="" id="row_'+data[i][0]+'">'
+		tbody += '<tr data-toggle="tooltip" title="" id="row_'+data[i][0]+'">';
 		for (var j = 0; j < indices; j++) {
 			if(j == (indices-1)){
 				if(data[i][j] == "1"){
@@ -110,7 +116,7 @@ function jQueryTableTrabajos(id_container, headers, data, LimitRow, maxHeight, N
 					tbody += '<td name="vigencia" id="periodo_'+data[i][0]+'">'+data[i][j]+' -a- '+data[i][j+1]+'</td>';
 					j = j + 1;
 				}else if(j === 1){
-					tbody += '<td id="nombreClt_'+data[i][0]+'">'+data[i][j]+'</td>';
+					tbody += '<td id="nombreClt_'+data[i][0]+'" style="cursor: pointer;" data-toggle="tooltip" data-container="body" data-placement="top" title="'+data[i][2]+'">'+data[i][j]+'</td>';
 				}else if(j === 3){
 					tbody += '<td id="tipoTrab_'+data[i][0]+'">'+data[i][j]+'</td>';
 				}else if(j === 8){
@@ -150,6 +156,7 @@ function jQueryTableTrabajos(id_container, headers, data, LimitRow, maxHeight, N
 	$('#tbody'+nivel).empty();
 	$('#tbody'+nivel).append(tbody);
 
+	$('td[data-toggle="tooltip"]').tooltip();
 }
 
 function jQueryTableCustom(id_container, headers, data, LimitRow, maxHeight, NameFunc) {

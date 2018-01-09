@@ -1,3 +1,28 @@
+// CARGANDO LA PAGINA DE INICIO
+$(function(){
+	$.ajax({
+		url:'routes/routeConfiguracion.php',
+		type:'post',
+		data: {action: 'verifUsuario'},
+		dataType:'JSON',
+		beforeSend: function(){
+			showSpinner();
+		},
+		error: function(error){
+			console.log(error);
+			toast1("Error!", "Ocurrio un error al cargar pagina", 8000, "error");
+			removeSpinner();
+		},
+		success: function(data){
+			removeSpinner();
+			if(data === "Administrador"){
+				$('#adminUsuariosDiv').show();
+				$('#passUsuariosDiv').show();
+				$('#adminUsuariosHR').show();
+			}
+		}
+	});
+});
 // FUNCION SELECCIONAR EL USUARIO
 $(document).on('change', '#tipoUser', function (){
 	var opciones = '<option value="-1">- Seleccione usuario -</option>';
@@ -192,3 +217,253 @@ $(document).on('click', '.ver', function (){
 	}
 	$('#'+id).focus();
 });
+
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::
+// ********************* USUARIOS **********************
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// ------------------------- BOTONES ------------------------------
+// *************** BOTON QUE ABRE MODAL NUEVO USUARIO *************
+$(document).on('click', '#btnNuevoUsuario', function(){
+	$('#modalUsuarios').modal('show');
+
+	$('#confUsuarioNombre').val('');
+	$('#confUsuarioCorreo').val('');
+});
+// ************ BOTON QUE ABRE MODAL PERMISOS USUARIO ************
+$(document).on('click', '#btnModifPermisos', function(){
+	$('#modalUsersPermisos').modal('show');
+
+	$('#usuarioSelectPermiso').html('');
+	$('#usuarioCorreoPermiso').val('');
+
+	$('#permisosUsuarioChecksDiv').hide();
+
+	$.ajax({
+		url:'routes/routeConfiguracion.php',
+		type:'post',
+		data: {action: 'traerUsuariosSistema'},
+		dataType:'JSON',
+		beforeSend: function(){
+			showSpinner();
+		},
+		error: function(error){
+			console.log(error);
+			toast1("Error!", "Ocurrio un error al cargar usuarios", 8000, "error");
+			removeSpinner();
+		},
+		success: function(data){
+			removeSpinner();
+			var options = '<option value="-1">- Seleccione el usuario -</option>';
+			$(data["USUARIOS"]).each(function (key, value){
+				options += '<option value="' + value.id + '">' + value.username + '</option>';
+			});
+			pintarChecksPermisos(data["CHECKS"]);
+			$('#usuarioSelectPermiso').append(options);
+		}
+	});
+});
+
+// ******* BOTON QUE DA ALTA DE USUARIO *******
+$(document).on('click', '#confAltaUsuario', function(){
+	if($('#confUsuarioNombre').val() === ""){
+		toast1("Error!", "Coloque el NOMBRE", 8000, "default");
+		$('#confUsuarioNombre').focus();
+	}else if($('#confUsuarioCorreo').val() === ""){
+		toast1("Error!", "Es necesario un CORREO ELECTRONICO", 8000, "default");
+		$('#confUsuarioCorreo').focus();
+	}else if(!validarEmail($('#confUsuarioCorreo').val())){
+		toast1("Error!", 'El formato del correo electronico capturado es incorrecto, intente nuevamente. Ej micorreo@midominio.com', 8000, "default");
+		$('#confUsuarioCorreo').focus();
+	}else if($('#confUsuarioNombre').val().toUpperCase() === "ADMINISTRADOR"){
+		toast1("Error!", "Nombre de usuario invalido", 8000, "error");
+		$('#confUsuarioNombre').focus();
+	}else{
+		var usuario = {
+			nombre: $('#confUsuarioNombre').val(),
+			correo: $('#confUsuarioCorreo').val()
+		};
+		PNotify.removeAll();
+		$.confirm({
+			title: 'Alta de usuario',
+			content: '¿Desea guardar este usuario?',
+			theme: 'light',
+			confirm: function(){
+				$.ajax({
+					url:'routes/routeConfiguracion.php',
+					type:'post',
+					data: {info: usuario ,action: 'altaUsuario'},
+					dataType:'json',
+					beforeSend: function(){
+						showSpinner();
+					},
+					error: function(error){
+						console.log(error);
+						removeSpinner();
+					},
+					success: function(data){
+						console.log(data);
+						if(data["INFO"] === "EXITO"){
+							$('#confUsuarioNombre').val('');
+							$('#confUsuarioCorreo').val('');
+							if(data["MAIL"] !== "EXITO"){
+								toast1("Atención!", "La información ha sido <b>almacenada correctamente</b>, pero al parecer hubo un error al enviar correo al usuario. Por favor, tome nota de la contraseña que el sistema creó para el\n\n<b>Contraseña: </b>" + data["MAIL"], 40000, "info");
+							}else{
+								toast1("Éxito!", "Usuario creado con éxito", 9000, "success");
+							}
+							$('#modalUsuarios').modal('hide');
+						}else{
+							toast1("Error!", "Hubo un error al guardar usuario", 9000, "error");
+						}
+						removeSpinner();
+					}
+				});
+			},
+			cancel: function(){}
+		});
+	}
+});
+
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::
+// ********************* PERMISOS **********************
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// ******** CARGAR DATOS AL SELECCIONAR USUARIO
+$(document).on('change', '#usuarioSelectPermiso', function(){
+	if(parseInt($(this).val()) > 0){
+		$.ajax({
+			url:'routes/routeConfiguracion.php',
+			type:'post',
+			data: {info: parseInt($(this).val()), action: 'traerUsuarioInfo'},
+			dataType:'JSON',
+			beforeSend: function(){
+				showSpinner();
+			},
+			error: function(error){
+				console.log(error);
+				toast1("Error!", "Ocurrio un error al cargar usuarios", 8000, "error");
+				removeSpinner();
+			},
+			success: function(data){
+				removeSpinner();
+				$('#usuarioCorreoPermiso').val(data["CORREO"]);
+				$('#permisosUsuarioChecksDiv').show();
+
+				if(data["CHECKS"].length > 0){
+					$(data["CHECKS"]).each(function (key, value){
+						var onOff = "off";
+						if(parseInt(value.status) === 1)
+							onOff = 'on';
+
+						$('#' + value.permisoclave).bootstrapToggle(onOff);
+					});
+				}else{
+					$('.permisos').each(function(){
+						$(this).bootstrapToggle('off');
+					});
+				}
+			}
+		});
+	}else{
+		$('#usuarioCorreoPermiso').val('');
+		$('#permisosUsuarioChecksDiv').hide();
+	}
+});
+
+// ************ FUNCION QUE PINTA LOS CHECKS EN EL DIV DE PERMISOS DESDE LA BD ************
+// FUNCION QUE TRAE LA LISTA DE MODULOS DEL SISTEMA
+function traerListaModulos(callback){
+	$.ajax({
+		url:'routes/routeConfiguracion.php',
+		type:'post',
+		data: {action: 'traerListaModulos'},
+		dataType:'JSON',
+		error: function(error){
+			console.log(error);
+			callback(false);
+		},
+		success: function(data){
+			var arr = [];
+			$(data).each(function (key, value){
+				arr.push(value.modulo);
+			});
+			callback(arr);
+		}
+	});
+}
+// FUNCION QUE PINTA LOS CHECKS UNA VES OBTENIDOS LOS MODULOS
+function pintarChecksPermisos(json){
+	traerListaModulos(function(arrModulos){
+		var jsonChecks = {};
+		for(i = 0; i < arrModulos.length; i++){
+			jsonChecks[arrModulos[i]] = '<div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">' + cadConvertirOracion(arrModulos[i]) + '</h3></div><div class="panel-body">';
+		}
+		$(json).each(function (key, value){
+			jsonChecks[value.modulo] += '<div class="col-md-3"><input class="permisos" id="' + value.clave + '" permiso="' + value.idpermiso + '" type="checkbox" data-toggle="toggle" data-on="Si" data-off="No" data-onstyle="success" data-offstyle="default" data-size="mini">&nbsp;' + value.nombre + '</div>';
+		});
+
+		$('#usuariosChecksDiv').html('');
+		$.each(jsonChecks, function (key, value){
+			jsonChecks[key] += '</div></div>';
+			$('#usuariosChecksDiv').append(value);
+		});
+
+		$('#modalUsersPermisos').on('shown.bs.modal', function (e) {
+	  		$('input[type="checkbox"]').each(function(){
+	  			$(this).bootstrapToggle();
+	  		});
+		});
+	});
+}
+
+// ************ BOTON QUE EDITA LOS PERMISOS DE USUARIO ********
+$(document).on('click', '#editarUsuarioDatos', function(){
+	if(parseInt($('#usuarioSelectPermiso').val()) > 0){
+		var checks = [];
+		$('.permisos').each(function(){
+			var val = {
+				idpermiso: $(this).attr("permiso"),
+				permisoclave: $(this).attr("id"),
+				status: $(this).prop("checked")
+			};
+			checks.push(val);
+		});
+		var usuario = {
+			id: parseInt($('#usuarioSelectPermiso').val()),
+			correo: $('#usuarioCorreoPermiso').val(),
+			checks: checks
+		};
+		$.ajax({
+			url:'routes/routeConfiguracion.php',
+			type:'post',
+			data: {info: usuario, action: 'editarPermisosUsuario'},
+			dataType:'JSON',
+			beforeSend: function(){
+				showSpinner();
+			},
+			error: function(error){
+				console.log(error);
+				toast1("Error!", "Ocurrio un error al guardar información de usuario", 8000, "error");
+				removeSpinner();
+			},
+			success: function(data){
+				removeSpinner();
+				if(data === "EXITO"){
+					toast1("Éxito!", "información actualizada", 3000, "success");
+				}else if(data === "ERRORPERMISOS"){
+					toast1("Error!", "Ocurrio un error al guardar permisos", 8000, "error");
+				}else if(data === "ERRORMAIL"){
+					toast1("Error!", "Ocurrio un error al actualizar correo", 8000, "error");
+				}
+			}
+		});
+	}
+});
+
+// *********** FUNCIONES MISCELANEAS *******************
+// FUNCION QUE CONVIERTE CADENA EN TIPO ORACION
+function cadConvertirOracion(str){
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}

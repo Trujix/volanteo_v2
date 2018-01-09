@@ -30,11 +30,10 @@ $(document).ready(function(){
 });
 
 function cargar_detalles(id){
-    var info = id;
     $.ajax({
         type: "POST",
         url: "rutas/routeEncuestas.php",
-        data: {action: "cargar_respuestas",info:info},
+        data: {action: "cargar_respuestas", info: id},
         dataType: "json",
         success: function (data) {
             var datos = data;

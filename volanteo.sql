@@ -37,6 +37,8 @@ DROP TABLE IF EXISTS `zonas`;
 DROP TABLE IF EXISTS `zonaspoligonos`;
 DROP TABLE IF EXISTS `estados`;
 DROP TABLE IF EXISTS `municipios`;
+DROP TABLE IF EXISTS `permisos`;
+DROP TABLE IF EXISTS `permisos_usuarios`;
 
 -- CREATES TABLES
 CREATE TABLE IF NOT EXISTS `accion_trabajos` (
@@ -437,11 +439,13 @@ CREATE TABLE IF NOT EXISTS `trabajos_zonas_detalles` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `password` varchar(200) COLLATE utf8_bin DEFAULT NULL,
-  `rol` int(11) DEFAULT NULL,
-  `status` int(11) DEFAULT NULL
+  `ctacorreo` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `rol` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `status` int(11) DEFAULT '1',
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 
@@ -485,10 +489,35 @@ CREATE TABLE IF NOT EXISTS `municipios` (
   KEY `idmunicipios` (`idmunicipio`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+CREATE TABLE IF NOT EXISTS `permisos` (
+  `idpermiso` int(11) NOT NULL AUTO_INCREMENT,
+  `clave` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `modulo` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `nombre` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`idpermiso`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
--- INSERTS (USUARIOS, ESTADOS, MUNICIPIOS, POLIGONOS)
-INSERT INTO `usuarios` (`id`, `username`, `password`, `rol`, `status`) VALUES
-  (1, 'administrador', 'b5b6a2692496acdbbb48a45beaca0e1644422612', 1, 1);
+CREATE TABLE IF NOT EXISTS `permisos_usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idusuario` int(50) NULL,
+  `idpermiso` int(50) NULL,
+  `permisoclave` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `status` boolean DEFAULT false,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+
+-- INSERTS (USUARIOS, ESTADOS, MUNICIPIOS, POLIGONOS, PERMISOS)
+TRUNCATE TABLE `permisos`;
+INSERT INTO `permisos` (`clave`, `modulo`, `nombre`) VALUES ('CLI01', 'CLIENTES', 'Agregar Cliente');
+INSERT INTO `permisos` (`clave`, `modulo`, `nombre`) VALUES ('CLI02', 'CLIENTES', 'Editar Cliente');
+INSERT INTO `permisos` (`clave`, `modulo`, `nombre`) VALUES ('CLI03', 'CLIENTES', 'Ver Cliente inactivo');
+INSERT INTO `permisos` (`clave`, `modulo`, `nombre`) VALUES ('CLI04', 'CLIENTES', 'Desactivar Cliente');
+INSERT INTO `permisos` (`clave`, `modulo`, `nombre`) VALUES ('CLI05', 'CLIENTES', 'Reactivar Cliente');
+INSERT INTO `permisos` (`clave`, `modulo`, `nombre`) VALUES ('CLI06', 'CLIENTES', 'Eliminar Cliente');
+
+INSERT INTO `usuarios` (`username`, `password`, `rol`) VALUES
+  ('administrador', 'b5b6a2692496acdbbb48a45beaca0e1644422612', 'Administrador');
 
   INSERT INTO `estados` (`idestado`, `estado`) VALUES
   (1, '﻿Aguascalientes'),

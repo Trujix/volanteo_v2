@@ -13,6 +13,9 @@
 		case 'read':
 			echo json_encode($Encuesta->read());
  			break;
+ 		case 'cargar_respuestas':
+			echo json_encode($Encuesta->cargar_respuestas($info));
+ 			break;
 
 	}
 	

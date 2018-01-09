@@ -4,6 +4,8 @@
 		$('#select_ac_in').val(1);
 		$('#buscar').val("");
 		showClientes();
+
+		$.getScript( "js/permisos.js", function(){});
 	});
 
 	var ajaxError = "Ocurrió un error, intentelo mas tarde o pongase en contacto con el administrador";
@@ -11,7 +13,18 @@
 	var validaCampos = "Debe llenar todos los campos para poder guardar";
 
 	$(document).on('change', '#select_ac_in', function(){
-		showClientes();
+		var mostrar = true;
+		if(parseInt($(this).val()) !== 1){
+			obtenerPermiso("CLI03", function(si){
+				if(si){
+					showClientes();
+				}else{
+					$('#select_ac_in option[value="1"]').prop("selected", true);
+				}
+			});
+		}else{
+			showClientes();
+		}
 	});
 
 	$(document).on('change', '#txt_estado', function(){
@@ -41,7 +54,11 @@
 	});
 
 	$(document).on('click', '#btn_nuevo', function(){
-		AddCliente();
+		obtenerPermiso("CLI01", function(si){
+			if(si){
+				AddCliente();
+			}
+		});
 	});
 
 	$(document).on('click', '#btnAdd, #btnEdit', function(){
@@ -111,162 +128,176 @@
 	}
 
 	function editCliente(id){
-		resetForm('formNuevo');
-		$('.btnModal').attr('id','btnEdit');
-		$('#modal_title').html('Editar cliente');
-		$('.required').removeClass('invalid');
+		obtenerPermiso("CLI02", function(si){
+			if(si){
+				resetForm('formNuevo');
+				$('.btnModal').attr('id','btnEdit');
+				$('#modal_title').html('Editar cliente');
+				$('.required').removeClass('invalid');
 
-		$.ajax({
-			url:'routes/routeClientes.php',
-			type:'post',
-			data: {"info": id, action: 'get'},
-			dataType:'json',
-			beforeSend: function(){
-				showSpinner();
-			},
-			error: function(error){
-				toast1("Error!", ajaxError, 8000, "error");
-				removeSpinner();
-			},
-			success: function(data){
-				console.log(data);
-				removeSpinner();
-				if(data != ""){
-					$('#id').val(data[0].idcliente);
-					$('#action').val('update');
+				$.ajax({
+					url:'routes/routeClientes.php',
+					type:'post',
+					data: {"info": id, action: 'get'},
+					dataType:'json',
+					beforeSend: function(){
+						showSpinner();
+					},
+					error: function(error){
+						toast1("Error!", ajaxError, 8000, "error");
+						removeSpinner();
+					},
+					success: function(data){
+						console.log(data);
+						removeSpinner();
+						if(data != ""){
+							$('#id').val(data[0].idcliente);
+							$('#action').val('update');
 
-					$('#txt_nombre').val(data[0].nombre);
-					$('#txt_rfc').val(data[0].rfc);
-					$('#txt_encargado').val(data[0].encargado);
-					$('#txt_calle').val(data[0].calle); 
-				    $('#txt_noext').val(data[0].noext); 
-				    $('#txt_int').val(data[0].noint); 
-				    $('#txt_colonia').val(data[0].colonia);
-					$('#txt_cp').val(data[0].cp); 
-				    $('#txt_pais').val(data[0].pais);
-				    $('#txt_ciudad').val(data[0].ciudad);
-				    $('#txt_tel1').val(data[0].tel1); 
-				    $('#txt_tel2').val(data[0].tel2); 
-					$('#txt_correo').val(data[0].ctacorreo);
-					$('#txt_web').val(data[0].sitioweb);
+							$('#txt_nombre').val(data[0].nombre);
+							$('#txt_rfc').val(data[0].rfc);
+							$('#txt_encargado').val(data[0].encargado);
+							$('#txt_calle').val(data[0].calle); 
+						    $('#txt_noext').val(data[0].noext); 
+						    $('#txt_int').val(data[0].noint); 
+						    $('#txt_colonia').val(data[0].colonia);
+							$('#txt_cp').val(data[0].cp); 
+						    $('#txt_pais').val(data[0].pais);
+						    $('#txt_ciudad').val(data[0].ciudad);
+						    $('#txt_tel1').val(data[0].tel1); 
+						    $('#txt_tel2').val(data[0].tel2); 
+							$('#txt_correo').val(data[0].ctacorreo);
+							$('#txt_web').val(data[0].sitioweb);
 
 
-					$('#txt_estado').val(data[0].estado);
+							$('#txt_estado').val(data[0].estado);
 
-					$('#txt_municipio').empty();
-					$('#txt_municipio').append('<option value="0">Seleccione una opción</option>');
-					for (var i = 1; i < data.length; i++){
-						if(data[i].idcliente == data[0].municipio){
-							$('#txt_municipio').append('<option value="'+data[i].idcliente+'" selected>'+data[i].nombre+'</option>');
-						}
-						else{
-							$('#txt_municipio').append('<option value="'+data[i].idcliente+'">'+data[i].nombre+'</option>');
+							$('#txt_municipio').empty();
+							$('#txt_municipio').append('<option value="0">Seleccione una opción</option>');
+							for (var i = 1; i < data.length; i++){
+								if(data[i].idcliente == data[0].municipio){
+									$('#txt_municipio').append('<option value="'+data[i].idcliente+'" selected>'+data[i].nombre+'</option>');
+								}
+								else{
+									$('#txt_municipio').append('<option value="'+data[i].idcliente+'">'+data[i].nombre+'</option>');
+								}
+							}
+
+							$('#modalClientes').modal('show');
+
+							// console.log($('#id').val());
+							// console.log($('#action').val());
 						}
 					}
-
-					$('#modalClientes').modal('show');
-
-					// console.log($('#id').val());
-					// console.log($('#action').val());
-				}
+				}); //fin ajax
 			}
-		}); //fin ajax
-
+		});
 	}
 
 	function reactivaCliente(id){
+		obtenerPermiso("CLI05", function(si){
+			if(si){
+				$.confirm({
+		            title: 'Atencion!',
+		            content: '¿Esta seguro que desea reactivar este cliente?',
+		            confirm: function(){
+		                $.ajax({
+							url:'routes/routeClientes.php',
+							type:'post',
+							data: {'info': id, action: 'reactiva'},
+							dataType:'json',
+							error: function(error){
+								toast1("Error!", ajaxError, 8000, "error");
+							},
+							success: function(data){
+								if(data == 1){
+									toast1("Felicidades!", success, 8000, "success");
+								}
+								else{
+									toast1("Error!", ajaxError, 8000, "error");
+								}
 
-		$.confirm({
-            title: 'Atencion!',
-            content: '¿Esta seguro que desea reactivar este cliente?',
-            confirm: function(){
-                $.ajax({
-					url:'routes/routeClientes.php',
-					type:'post',
-					data: {'info': id, action: 'reactiva'},
-					dataType:'json',
-					error: function(error){
-						toast1("Error!", ajaxError, 8000, "error");
-					},
-					success: function(data){
-						if(data == 1){
-							toast1("Felicidades!", success, 8000, "success");
-						}
-						else{
-							toast1("Error!", ajaxError, 8000, "error");
-						}
-
-						showClientes();
-					}
-				}); //fin ajax
-            },
-            cancel: function(){
-                // console.log('false');
-            }
-        });
-
+								showClientes();
+							}
+						}); //fin ajax
+		            },
+		            cancel: function(){
+		                // console.log('false');
+		            }
+		        });
+			}
+		});
 	}
 
 	function deleteCliente(id){
-		$.confirm({
-            title: 'Atencion!',
-            content: '¿Esta seguro que desea dar de baja a este cliente?',
-            confirm: function(){
-                $.ajax({
-					url:'routes/routeClientes.php',
-					type:'post',
-					data: {'info': id, action: 'delete'},
-					dataType:'json',
-					error: function(error){
-						toast1("Error!", ajaxError, 8000, "error");
-					},
-					success: function(data){
-						if(data == 1){
-							toast1("Felicidades!", success, 8000, "success");
-						}
-						else{
-							toast1("Error!", error+'1', 8000, "error");
-						}
-
-						showClientes();
-					}
-				}); //fin ajax
-            },
-            cancel: function(){
-                // console.log('false');
-            }
-        });
-
+		obtenerPermiso("CLI04", function(si){
+			if(si){
+				$.confirm({
+		            title: 'Atencion!',
+		            content: '¿Esta seguro que desea dar de baja a este cliente?',
+		            confirm: function(){
+		                $.ajax({
+							url:'routes/routeClientes.php',
+							type:'post',
+							data: {'info': id, action: 'delete'},
+							dataType:'json',
+							error: function(error){
+								toast1("Error!", ajaxError, 8000, "error");
+							},
+							success: function(data){
+								/*if(data == 1){
+									toast1("Felicidades!", success, 8000, "success");
+								}
+								else{
+									toast1("Error!", data+'1', 8000, "error");
+								}*/
+								toast1("Felicidades!", success, 8000, "success");
+								showClientes();
+							}
+						}); //fin ajax
+		            },
+		            cancel: function(){
+		                // console.log('false');
+		            }
+		        });
+			}
+		});
+			
 	}
 
 	function eliminarCliente(id){
-		$.confirm({
-            title: 'Atencion!',
-            content: '<b>Esta acción eliminará los bloques y sucursales anexados a este cliente</b><br>¿Esta seguro que desea <b>ELIMINAR</b> a este cliente?',
-            confirm: function(){
-                $.ajax({
-					url:'routes/routeClientes.php',
-					type:'post',
-					data: {'info': id, action: 'eliminarCliente'},
-					dataType:'json',
-					error: function(error){
-						toast1("Error!", ajaxError, 8000, "error");
-					},
-					success: function(data){
-						if(data == 1){
-							toast1("Felicidades!", success, 8000, "success");
-						}
-						else{
-							toast1("Error!", error+'1', 8000, "error");
-						}
-						showClientes();
-					}
-				}); //fin ajax
-            },
-            cancel: function(){
-                // console.log('false');
-            }
-        });
+		obtenerPermiso("CLI06", function(si){
+			if(si){
+				$.confirm({
+		            title: 'Atencion!',
+		            content: '<b>Esta acción eliminará los bloques y sucursales anexados a este cliente</b><br>¿Esta seguro que desea <b>ELIMINAR</b> a este cliente?',
+		            confirm: function(){
+		                $.ajax({
+							url:'routes/routeClientes.php',
+							type:'post',
+							data: {'info': id, action: 'eliminarCliente'},
+							dataType:'json',
+							error: function(error){
+								toast1("Error!", ajaxError, 8000, "error");
+							},
+							success: function(data){
+								/*if(data == 1){
+									toast1("Felicidades!", success, 8000, "success");
+								}
+								else{
+									toast1("Error!", data+'1', 8000, "error");
+								}*/
+								toast1("Felicidades!", success, 8000, "success");
+								showClientes();
+							}
+						}); //fin ajax
+		            },
+		            cancel: function(){
+		                // console.log('false');
+		            }
+		        });
+			}
+		});
 	}
 
 	function showClientes(){

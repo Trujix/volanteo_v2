@@ -30,6 +30,10 @@
 		case 'get':
 			echo $Proveedor->get($info);
 			break;
+		// :::::::::::: 08-01-2018 :::::::::::::
+		case 'eliminarProveedor':
+			echo $Proveedor->eliminarProveedor($info);
+			break;
 	}
 	
 ?>

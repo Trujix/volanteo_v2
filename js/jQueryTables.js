@@ -67,7 +67,7 @@ function jQueryTableEncuesta(id_container, headers, data, LimitRow, maxHeight) {
 	for (var i = 0; i < headers.length; i++){
 		thead += '<th>'+headers[i]+'</th>'
 	}
-	
+	console.log(data);
 
 	$('#thead').empty()
 	$('#thead').append(thead)
@@ -78,12 +78,12 @@ function jQueryTableEncuesta(id_container, headers, data, LimitRow, maxHeight) {
 	for (var i = 0; i < data.length; i++) {
 		tbody += '<tr>'
 		
-		for (var j = 0; j < indices-1; j++) {
+		for (var j = 0; j < indices-2; j++) {
 		
-			tbody += '<td>'+data[i][j]+'</td>'
+			tbody += '<td>'+data[i][j]+'</td>';
 			
 			if (j==1) {
-				tbody += '<td> <a> Detalle </a>  </td>'	
+				tbody += '<td> <a data-toggle="modal" data-target="#Modal_detalles" onclick="cargar_detalles('+data[i][3]+')" style="cursor: pointer"> Detalle </a>  </td>'	
 				tbody += '<td><a href="mailto:'+data[i][2]+'">'+data[i][2]+'</a>  </td>'	
 			}	
 

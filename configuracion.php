@@ -37,6 +37,13 @@
   <link rel="stylesheet" type="text/css" href="plugins/collapse/css.css">
   <script src="plugins/collapse/js.js" type="text/javascript"></script>
 
+  <!-- Toggle personalizado y selector de Color -->
+  <link href="plugins/toogle/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="plugins/toogle/js/bootstrap-toggle.min.js"></script>
+  <link rel="stylesheet" media="screen" type="text/css" href="plugins/color/css/colorpicker.css" />
+  <script type="text/javascript" src="plugins/color/js/colorpicker.js"></script>
+
+
   <style>
   	@media (min-width: 992px){
   		.header_tablas{
@@ -107,7 +114,20 @@
                   <div class="clearfix"></div>
                 </div>
 
-                <div id="contenido" class="x_content table-responsive">
+                <div id="adminUsuariosDiv" class="x_content table-responsive" hidden>
+                  <h4>Administración de usuarios</h4> 
+                    <div class="col-md-3">
+                      <button id="btnNuevoUsuario" class="btn btn-default">Agregar Usuario</button>
+                    </div>
+                    <div class="col-md-3">
+                      <button id="btnModifPermisos" class="btn btn-warning">Permisos de Usuario</button>
+                    </div>
+                </div>
+
+                <div id="adminUsuariosHR" class="x_content table-responsive" hidden><hr></div>
+
+
+                <div id="adminPassDiv" class="x_content table-responsive">
                   <h4>Cambiar contraseña</h4>
                       <div class="col-md-4"><div class="input-group">
                           <input id="txtAntPass" type="password" class="form-control pass" placeholder="Coloque la antigua contraseña...">
@@ -141,11 +161,12 @@
 
                 <div id="contenido" class="x_content table-responsive"><hr></div>
 
-                <div id="contenido" class="x_content table-responsive">
+                <div id="passUsuariosDiv" class="x_content table-responsive" hidden>
                   <h4>Restablecer contraseña de usuarios</h4>
                   <div class="col-md-4">
                     <select id="tipoUser" class="form-control user">
                       <option value="-1">- Seleccione tipo de usuario -</option>
+                      <option cuno="username" cdos="id" value="usuarios">Usuarios</option>
                       <option cuno="encargado" cdos="idcliente" value="clientes">Clientes</option>
                       <option cuno="encargado" cdos="idbloque" value="bloques">Bloques</option>
                       <option cuno="encargado" cdos="idsucursal" value="sucursales">Sucursales</option>
@@ -181,22 +202,67 @@
 
   </div>
   
-  <!-- MODAL -->
-  <div class="modal fade bs-example-modal-lg" id="modal_lvl2" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- MODAL ALTA DE USUARIO -->
+  <div class="modal fade bs-example-modal-lg" id="modalUsuarios" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
           </button>
-          <h4 class="modal-title" id="title_lvl2">Detalles del servicio </h4>
+          <h4 class="modal-title" id="title_lvl2">Nuevo Usuario</h4>
         </div>
-        <div class="modal-body" id="" style="overflow: auto;">
-          <div id="accordionDiv"></div>
+        <div class="modal-body" style="overflow: auto;">
+          <div class="col-md-6">
+            <input id="confUsuarioNombre" type="text" class="form-control" placeholder="Nombre de usuario..." />
+          </div>
+          <div class="col-md-6">
+            <input id="confUsuarioCorreo" type="text" class="form-control" placeholder="Correo de usuario..."/>
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="showlvl3_todos()" class="btn btn-primary btnModalT col-md-5 a-la-izq">Ver detalle de todos</button>
+          <button type="button" id="confAltaUsuario" class="btn btn-primary btnModalT col-md-5 a-la-izq">Guardar Usuario</button>
           <button type="button" id="" class="btn btn-warning col-md-5 a-la-der" data-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CONFIG PERMISOS DE USUARIO -->
+  <div class="modal fade bs-example-modal-lg" id="modalUsersPermisos" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title" id="title_lvl2">Configurar Usuario</h4>
+        </div>
+        <div class="modal-body" style="overflow: auto;">
+            <div>
+              <div class="row">
+                <div class="col-md-6">
+                  <select id="usuarioSelectPermiso" class="form-control"></select>
+                </div>
+                <div class="col-md-6">
+                  <input id="usuarioCorreoPermiso" type="text" class="form-control">
+                </div>
+              </div>
+            </div><br>
+            <div id="permisosUsuarioChecksDiv" hidden>
+              <div class="row" style="height: 380px; overflow-y: scroll;">
+                <div id="usuariosChecksDiv" class="col-md-12"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button id="editarUsuarioDatos" class="btn btn-success">Guardar Cambios</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
         </div>
 
       </div>

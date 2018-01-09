@@ -5,10 +5,10 @@
 	$('document').ready(function(){
 		verLvl1();
 
-		setInterval(function(){
+		/*setInterval(function(){
 			// RECARGADO CADA 15 MIUNUTOS
 			location.reload();
-		}, 500000);
+		}, 500000);*/
 
 		folder = url.substring(0, url.lastIndexOf('/'));
 	});
