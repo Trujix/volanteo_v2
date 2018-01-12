@@ -298,7 +298,48 @@
   <input type="text" id="action" hidden name="action"> -->
 
   <!-- MODAL TRABAJOS-->
-  <div class="modal fade bs-example-modal-lg" id="modalTrabajos" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade bs-example-modal-lg" id="modalCalculadoraHR" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Convertidor Horas - Minutos</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3" align="right">
+              <label>Eliga un Bloque: </label>
+            </div>
+            <div class="col-md-6">
+              <select id="modalBloqueSelect" class="form-control"></select>
+            </div>
+          </div><br>
+          <div class="row" style="overflow-y: scroll; max-height: 300px;">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="table table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Sucursal</th>
+                          <th>Tipo</th>
+                          <th>Cantidad</th>
+                        </tr>
+                      </thead>
+                      <tbody id="modalCalculadoraTabla"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="cerrarModalCalculadora" type="button" class="btn btn-default">Cancelar</button>
+          <button id="guardarModalCalculadora" type="button" class="btn btn-primary">Guardar Configuración</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 

@@ -36,7 +36,7 @@
 			removeSpinner();
 		},
 		success: function(data){
-                  
+            
 			var paso1 = data.PASO1;
 			var paso2 = data.PASO2;
 			var paso3 = data.PASO3;
@@ -80,6 +80,7 @@
             	txt_cantidadP1 	:  paso1[0].cantidad,
             	status			:  status1
             };
+            inputCantidadDinamico(paso1[0].tipo);
 
             // LLENANDO LOS VALORES DE LA VAR
 			// GLOBAL STEP2 CORRESP AL PASO 2

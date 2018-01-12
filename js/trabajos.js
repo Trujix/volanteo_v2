@@ -112,10 +112,11 @@
 
 	$(document).on('change', '#select_servicio', function(){
 		if($(this).val() === "Perifoneo"){
-			toast1("Atencion!", "La cantidad de perifoneo debe ser asignada en <b>MINUTOS</b>.", 8000, "default");
+			toast1("Atencion!", "La cantidad de perifoneo debe ser asignada en <b>MINUTOS</b>.\n\nSi desea utlizar <b>HORAS</b> como medida de configuración, utilize el <b>CONVERTIDOR&nbsp;</b><span class='glyphicon glyphicon-th'></span>", 12000, "default");
 		}else{
 			PNotify.removeAll();
 		}
+		inputCantidadDinamico($(this).val());
 	});
 // Eventos Paso 2 -------------------------------------------------------
 	
@@ -214,11 +215,11 @@
 
 	// **************** CAMBIO [22/07/2017] ***************
 	// ESTA FUNCION SE MODIFICO PARA AGREGAR SUCURSALES NE LUGAR DE MUNICIPIOS (PASO 2)
-	function traerBloques(){
+	function traerBloques(cliente, select){
 		$.ajax({
 			url:'routes/routeTrabajos.php',
 			type:'POST',
-			data: {info: $('#txt_cliente').val(), action: "traerBloques"},
+			data: {info: cliente, action: "traerBloques"},
 			dataType:'JSON',
 			beforeSend: function(){
 				showSpinner();
@@ -234,8 +235,8 @@
 				for(i = 0; i < data.length; i++){
 					opciones += '<option value="'+data[i]['idbloque']+'">' + data[i]['nombre'] + '</option>';
 				}
-				$('#txt_estadoT').html('');
-				$('#txt_estadoT').append(opciones);
+				$(select).html('');
+				$(select).append(opciones);
 			}
 		});
 	}
@@ -963,8 +964,8 @@
 
             	// ******* CAMBIO [22/07/2017] **********
             	// FUNCION TRAER BLOQUES (ESTA SUPLE ESTADOS POR BLOQUES EN STEP 2)
-            	traerBloques();
-            	
+            	traerBloques($('#txt_cliente').val(), '#txt_estadoT');
+            	valuePaso1GLOBAL = bandera;
             	step1['status'] = 1;
             	return bandera;
 
@@ -1438,3 +1439,192 @@
         }
 
     }
+
+
+// ::::::::::::::::::::::: 09/01/2018 :::::::::::::::::::
+// FUNCIONES EXSTRAS - CREACION DE CALCULADORA DE HR - MNS
+function inputCantidadDinamico(accion){
+	$('#cantidadDiv').html('');
+	if(accion === "Volanteo")
+		$('#cantidadDiv').append(inputTXTVolanteo);
+	else
+		$('#cantidadDiv').append(inputTXTPerifoneo);
+
+	$('[data-toggle="tooltip"]').tooltip();
+}
+
+// BOTON QUE LLAMA EL MODAL DE LA CALCULADORA HRS-MINS
+var valuePaso1GLOBAL;
+$(document).on('click', '#btnModalCalculadora', function(){
+	$('#txt_cantidadP1').val('0');
+	$('#btn_next').click();
+	if(valuePaso1GLOBAL){
+		traerBloques($('#txt_cliente').val(), '#modalBloqueSelect');
+		$('#wizard').smartWizard('goToStep', 2);
+		$('#modalCalculadoraHR').modal('show');
+		toast1("Nota:", "<b>Esta es solo una herramienta auxiliar.</b>\n\nLas cantidades asignadas en <b>HORAS</b> serán convertidas a minutos, al igual que la configuración propia del trabajo se realiza en <b>MINUTOS</b>", 10000, "info");
+	}
+});
+
+// *********************** BOTONES DEL MODAL *********************
+// BOTON CUANDO SE ACEPTA LOS DATOS DEL MODAL - GUARDAR CONFIGURACION
+$(document).on('click', '#guardarModalCalculadora', function(){
+	sumatoriaCatnsSucusales(function(cant){
+		if(cant > 0){
+			$.confirm({
+				title: 'Guardar cambios',
+				content: '¿Desea guardar la configuración?',
+				theme: 'light',
+				confirm: function(){
+					calculadora2Paso2($('#modalBloqueSelect').val(), cant);
+				},
+				cancel: function(){}
+			});
+		}else{
+			toast1("Error!", "No ha asignado cantidad a ninguna sucursal", 8000, "error");
+		}
+	});
+});
+// BOTON CUANDO SE CIERRA EL MODAL - CANCELAR CONFIGURACION
+$(document).on('click', '#cerrarModalCalculadora', function(){
+	$.confirm({
+		title: 'Cancelar',
+		content: '¿Desea cancelar la configuración Hrs-Mins?',
+		theme: 'light',
+		confirm: function(){
+			$('#wizard').smartWizard('goToStep', 1);
+			$('#wizard').smartWizard('disableStep', 2);
+			$('#txt_cantidadP1').val('');
+			$('#txt_cantidadP1').focus();
+			$('#modalCalculadoraHR').modal('hide');
+		},
+		cancel: function(){}
+	});
+});
+
+// ACCION AL SELECCIONAR UN BLOQUE EN LA CALCULADORA - TRAER SUCURSALES
+var idsSucsArrGLOBAL = [];
+$(document).on('change', '#modalBloqueSelect', function(){
+	$.ajax({
+		url:'routes/routeTrabajos.php',
+		type:'POST',
+		data: {info: $(this).val(), action: "traerSucursales"},
+		dataType:'JSON',
+		beforeSend: function(){
+			idsSucsArrGLOBAL = [];
+			showSpinner();
+		},
+		error: function(error){
+			console.log(error);
+			toast1("Error!", error, 8000, "error");
+			removeSpinner();
+		},
+		success: function(data){
+			removeSpinner();
+			var tabla = "";
+			$(data).each(function (key, value){
+				tabla += '<tr><td id="suc_' + value.idsucursal + '" suc="' + value.idsucursal + '">' + value.nombre + '</td><td><select id="tipo_' + value.idsucursal + '" suc="' + value.idsucursal + '" class="form-control sucSelec"><option value="1">Hrs</option><option value="2">Mins</option></select></td><td><input id="cant_' + value.idsucursal + '" suc="' + value.idsucursal + '" type="text" class="form-control txtCantsSucs"></td></tr>';
+				idsSucsArrGLOBAL.push(value.idsucursal);
+			});
+			$('#modalCalculadoraTabla').html('');
+			$('#modalCalculadoraTabla').append(tabla);
+		}
+	});
+});
+
+// VARIABLES GLOBALES QUE CONTIENEN LOS DOS INPUTS TEXT PARA LA CANTIDAD DE VOLANTOEO Y PERIFONEO
+var inputTXTVolanteo = '<label>Cantidad:</label><input type="text" class="form-control txtFormStep1 col-md-12 col-sm-12 col-xs-12" name="txt_cantidadP1" placeholder="Cantidad.." id="txt_cantidadP1">;';
+var inputTXTPerifoneo = '<label>Cantidad:</label>' +
+							'<div class="input-group">'+
+                              '<input type="text" class="form-control txtFormStep1" name="txt_cantidadP1" placeholder="Cantidad.." id="txt_cantidadP1">'+
+                              '<span class="input-group-btn">'+
+                                '<button id="btnModalCalculadora" class="btn btn-default" type="button" data-container="body" data-toggle="tooltip" data-placement="left" title="Convertidor de Hrs-Mins"><span class="glyphicon glyphicon-th"></span></button>'+
+                              '</span>'+
+                            '</div>';
+
+// VALIDAR LOS TEXTBOX DE CANTIDAES - CALCULADORA
+$(document).on('keyup click contextmenu keypress change paste blur', '.txtCantsSucs', function (e) {
+    if (isNaN($(this).val()) || $(this).val() === '') {
+        $(this).val('0');
+    }/*else{
+    	$(this).val($(this).val().replace(/^0+/, ''));
+    }*/
+    if(parseInt($('#tipo_' + $(this).attr("suc")).val()) === 2)
+    	$(this).val(parseInt($(this).val()));
+
+    if(!isNaN($(this).val()) && parseInt($(this).val()) > 0)
+    	$(this).val($(this).val().replace(/^0+/, ''));
+});
+// CONVERSION DE NUMERO ENTERO AL SELECCIONAR MINUTOS
+$(document).on('change', '.sucSelec', function(){
+	if (isNaN($('#cant_' + $(this).attr("suc")).val()) || $('#cant_' + $(this).attr("suc")).val() === '') {
+        $('#cant_' + $(this).attr("suc")).val('0');
+    }
+	if(parseInt($(this).val()) === 2)
+		$('#cant_' + $(this).attr("suc")).val(parseInt($('#cant_' + $(this).attr("suc")).val()));
+});
+
+// FUNCION QUE DEVUELVE LA SUMA DE TODAS LAS CANTS DE SUCURSALES
+var dataCalculadoraJSON = [];
+function sumatoriaCatnsSucusales(callback){
+	var total = 0;
+
+	dataCalculadoraJSON = [];
+	$('.txtCantsSucs').each(function(){
+		if($(this).val() !== '' && parseFloat($(this).val()) > 0){
+			var cant = 0;
+			if(parseInt($('#tipo_' + $(this).attr("suc")).val()) === 1){
+				cant = parseFloat($(this).val()) * 60;
+			}else{
+				cant = parseInt($(this).val());
+			}
+
+			total += cant;
+			var val = {
+				id: $(this).attr("suc"),
+				cant: cant
+			};
+			dataCalculadoraJSON.push(val);
+		}
+	});
+	callback(total);
+}
+
+// FUNCION QUE COLOCA LAS CANTIDADES DE LA CALCULADORA EN LA TABLA DEL PASO 2
+function calculadora2Paso2(selectVal, total){
+	$('#txt_estadoT option[value="' + selectVal + '"]').prop("selected", true);
+	$('#txt_estadoT').change();
+
+	if(accionTrabajos === "EDITAR"){
+		$('.editTrab').click();
+		$('#wizard').smartWizard('disableStep', 3);
+	}
+	setTimeout(function(){
+		showSpinner();
+	}, 500);
+	setTimeout(function(){
+		calculadora2Paso2F2(total);
+	}, 2000);
+}
+function calculadora2Paso2F2(total){
+	var hecho = [];
+	$(dataCalculadoraJSON).each(function (key, value){
+		$('#ch_' + value.id).prop("checked", true);
+		$('#txt_cantidadMun_' + value.id).val(value.cant);
+		hecho.push($.ajax());
+	});
+
+	$.when.apply($, hecho).done(function () {
+		$('#txt_cantidadP1').val(total);
+        $('#txt_cantidad_total').val(total);
+		$('#txt_cantidadP2').val(total);
+		$('#txt_sumatoria').val(total);
+		$('#txt_diferencia').val('0');
+		$('#txt_diferencia_total').val('0');
+
+		$('#modalCalculadoraHR').modal('hide');
+		$('#btn_nuevaArea').removeAttr('disabled');
+		removeSpinner();
+		step1["txt_cantidadP1"] = total;
+    });	
+}

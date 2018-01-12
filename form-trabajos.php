@@ -235,8 +235,14 @@
                           </div>
 
                           <div id="cantidadDiv" class="col-md-6 col-sm-6 col-xs-12">
-                            <label>Cantidad:</label>
+                            <!-- <label>Cantidad:</label>
                             <input type="text" class="form-control txtFormStep1 col-md-12 col-sm-12 col-xs-12" name="txt_cantidadP1" placeholder="Cantidad.." id="txt_cantidadP1">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search for...">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-th"></span></button>
+                              </span>
+                            </div> -->
                           </div>
 
                         </div>
@@ -321,7 +327,7 @@
                       <div class="alert alert-success alert-dismissible fade in" role="alert">
                         <button type="button" class="close" onclick="closealert()"><span aria-hidden="true">×</span>
                         </button>
-                        <p style="font-size: 19px;"><strong>Atención!</strong> Si quieres editar este bloque, presiona <a href="#" onclick="edit()">aquí</a></p>
+                        <p style="font-size: 19px;"><strong>Atención!</strong> Si quieres editar este bloque, presiona <a class="editTrab" href="#" onclick="edit()">aquí</a></p>
                       </div>
                     </div>
                     
