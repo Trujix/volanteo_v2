@@ -74,6 +74,7 @@
 
 	});
 
+	var switchMuncicipio = 0;
 	$(document).on('change', '#txt_estadoF', function(){
 
 		$.ajax({
@@ -91,6 +92,12 @@
 					for (var i = 0; i < data.length; i++) {
 						$('#txt_municipioF').append('<option value="'+data[i].cveMpo+'">'+data[i].nomMpo+'</option>');
 					}
+					setTimeout(function(){
+						if(switchMuncicipio > 0){
+							$('#txt_municipioF').val(switchMuncicipio);
+							switchMuncicipio = 0;
+						}
+					}, 500);
 				}
 				else
 					toast1("Error!", ajaxError, 8000, "error");
@@ -140,6 +147,7 @@
 							showSpinner();
 						},
 						error: function(error){
+							console.log(error);
 							toast1("Error!", ajaxError, 8000, "error");
 							removeSpinner();
 						},
@@ -523,3 +531,21 @@
 // Modal de zonas asignadas a los provedores --------------------------
 	validaCampoLength("txt_costoserv", 50);
 	validaCampoLength("txt_costosad", 50);
+
+
+// ---------------- 08/03/2018 ---------------
+// ::::::::::::: FUNCIONES NUEVAS ::::::::::::
+$(document).on('click', '#datGen2DatFact', function(){
+	$('#txt_nombreF').val($('#txt_nombre').val());
+	$('#txt_rfcF').val($('#txt_rfc').val());
+	$('#txt_calleF').val($('#txt_calle').val());
+	$('#txt_coloniaF').val($('#txt_colonia').val());
+	$('#txt_noextF').val($('#txt_noext').val());
+	$('#txt_nointF').val($('#txt_noint').val());
+	$('#txt_cpF').val($('#txt_cp').val());
+	$('#txt_ciudadF').val($('#txt_ciudad').val());
+
+	$('#txt_estadoF').val($('#txt_estado').val());
+	switchMuncicipio = parseFloat($('#txt_municipio').val());
+	$('#txt_estadoF').change();
+});

@@ -28,17 +28,17 @@ var map;
 				removeSpinner();
 			},
 			success: function(data){
-				console.log(data)
+				//console.log(data)
 				removeSpinner();
-				if(data.length > 0){
+				if(data.geo.length > 0){
 
-					if(data.length > 1)
-						var puntoMedio = Math.round(data.length / 2);
+					if(data.geo.length > 1)
+						var puntoMedio = Math.round(data.geo.length / 2);
 					else
 						var puntoMedio = 0;
 
-					console.log(data[puntoMedio].latitud+','+data[puntoMedio].longitud);
-					latlng = new google.maps.LatLng(data[puntoMedio].latitud,data[puntoMedio].longitud);
+					//console.log(data[puntoMedio].latitud+','+data[puntoMedio].longitud);
+					latlng = new google.maps.LatLng(data.geo[puntoMedio].latitud,data.geo[puntoMedio].longitud);
 
 					//Opciones del mapa
 			        var options = {
@@ -58,7 +58,9 @@ var map;
 
 					lineas.setMap(map);
 
-					addMarkers(data);
+					generarPrimerUltimoIDS(data.ids, function(){
+						addMarkers(data.geo);
+					});
 				}
 				else{
 
@@ -89,7 +91,7 @@ var map;
 	}
 
 	function addMarkers(data){
-
+		//console.log(data);
 		var latLng;
 	  	var path_ = lineas.getPath();
 		deleteMarkers();
@@ -104,12 +106,21 @@ var map;
 
 				// console.log(data[i].latitud,data[i].longitud);
 				// console.log(latLng);
-			
+			var hora = data[i].date_time.split(" ")[1], icono = '';
+			if(parseFloat(data[i].id) === primerID){
+				icono = 'images/banderasPolig/inicio.png';
+			}else if(parseFloat(data[i].id) === ultimoID){
+				icono = 'images/banderasPolig/fin.png';
+			}else{
+				icono = 'http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png';
+			}
+
 			var marker = new google.maps.Marker({
 				position: latLng,
 				map: map,
 				// icon: 'http://maps.google.com/mapfiles/dir_84.png'
-				icon:'http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png'
+				icon: icono,
+				title: hora
 			});
 			markers.push(marker);
 
@@ -130,4 +141,14 @@ var map;
 		for (var i = 0; i < markers.length; i++) {
 		    markers[i].setMap(map);
 		}
+	}
+	var primerID = 0, ultimoID = 0;
+	function generarPrimerUltimoIDS(data, callback){
+		/*$(data).each(function (key, value){
+			primerID = parseFloat(value.Primero);
+			ultimoID = parseFloat(value.Ultimo);
+		});*/
+		primerID = parseFloat(data[1].id);
+		ultimoID = parseFloat(data[0].id);
+		callback(true);
 	}

@@ -459,6 +459,7 @@ $(document).on('click', '#todosPoligonos', function(){
 // *********************************************************
 // VARIABLE DE MAPA GLOBAL
 var miMapa;
+var miMapaExec;
 // MANDAMOS LAS COORDENADAS A LAS VAR GLOBALES LON - LAT
 var longitudInicial;
 var latitudInicial;
@@ -476,25 +477,25 @@ function iniciarMapa(){
     });
 
 	setTimeout(function(){
-		miMapa = {
+		miMapaGlobal = {
 			center: new google.maps.LatLng(latitudInicial, longitudInicial),
 			zoom: 15,
 			mapTypeId: google.maps.MapTypeId.TERRAIN,
 		};
 		// PINTAMOS MAPA
-		var mapa = new google.maps.Map(document.getElementById("googleMap"), miMapa);
+		 miMapaExec = new google.maps.Map(document.getElementById("googleMap"), miMapaGlobal);
 	},200);
 }
 // FUNCION QUE MUESTRA EL MAPA SIN POLIGONOS (PARA EVITAR ERRORES)
 function mapaDefault(zoom, geoData){
-	miMapa = new google.maps.Map(document.getElementById('googleMap'),{zoom: zoom,mapTypeId: google.maps.MapTypeId.TERRAIN,});
+	miMapaGlobal = new google.maps.Map(document.getElementById('googleMap'),{zoom: zoom,mapTypeId: google.maps.MapTypeId.TERRAIN,});
 	var geoCodigo = new google.maps.Geocoder();
 	// SE RECIBE LA VAR GEODATACOMPLETO, RESULTA DE UNIR LOS SELECT
 	geoCodigo.geocode({'address': geoData}, function(results, status) {
 		if(status === 'OK'){
-			miMapa.setCenter(results[0].geometry.location);
+			miMapaGlobal.setCenter(results[0].geometry.location);
 			var marker = new google.maps.Marker({
-				map: miMapa,
+				map: miMapaGlobal,
 			});
 		}else{
 			alert('Error en la geolocalizacion: ' + status);
@@ -616,6 +617,18 @@ var cantMunInfoWindow;
 			poligonoVer["pol_" + elem.id].setMap(miMapaGlobal);
 		});
 	}
+	// CONTROL DEL BOTON DE FULL SCREEN DEL MAPA
+	var zoomGoogleMap = false;
+	$(document).on('click', 'button[draggable="false"]', function(){
+		if(zoomGoogleMap)
+			zoomGoogleMap = false;
+		else
+			zoomGoogleMap = true;
+	});
+	function ejecutarZoomGM(){
+		if(zoomGoogleMap)
+			$('button[draggable="false"]').click();
+	}
 
 	var cantGLOBAL = 0;
 	var cantPoligGLOBAL = 0;
@@ -625,6 +638,7 @@ var cantMunInfoWindow;
 			if(parseInt($('#totalRest').text()) === 0 ||  parseInt($('#cant_' + idFechaPerifSelecGLOBAL).text()) === 0){
 				toast1("Error cantidad", "Ha superado la cantidad disponible.", 8000, "error");
 			}else if(parseInt(cant) > parseInt($('#cant_' + idFechaPerifSelecGLOBAL).text())){
+				ejecutarZoomGM();
 				$.confirm({
 					title: 'Cantidad insuficiente',
 					content: '<b>La cantidad de la zona seleccionada es superior a la restante:</b><br>¿Desea ajustar la cantidad a '+$('#cant_' + idFechaPerifSelecGLOBAL).text()+'?',
@@ -638,6 +652,7 @@ var cantMunInfoWindow;
 				asignarPoligonoTrue(idPolig, nomPolig, cant);
 			}
 		}else{
+			ejecutarZoomGM();
 			toast1("Error", "No ha seleccionado fecha.", 6000, "error");	
 		}	
 	}

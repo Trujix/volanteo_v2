@@ -1690,8 +1690,8 @@ function imprimirRoles(json){
 	$(horarios).each(function (key, value){
 		var horario = [
 			{text: value.NomProv, style: 'textoTabla2'},
-			{text: value.inicio, style: 'textoTabla2'},
-			{text: value.fin, style: 'textoTabla2'}
+			{text: fechaFormatoCompleto(value.inicio), style: 'textoTabla2'},
+			{text: fechaFormatoCompleto(value.fin), style: 'textoTabla2'}
 		];
 		provsDATA.push(horario);
 	});
@@ -1717,7 +1717,7 @@ function imprimirRoles(json){
 						],
 						[
 							{text: [{ text: 'Tipo: ', style: 'tituloTabla1' },{ text: cliente[0]["tipo"], style: 'textoTabla1' }], border: [false, false, false, false]},
-							{text: [{ text: 'Vigencia: ', style: 'tituloTabla1' },{ text: cliente[0]["vigencia"], style: 'textoTabla1' }], border: [false, false, false, false], colSpan: 3},
+							{text: [{ text: 'Vigencia: ', style: 'tituloTabla1' },{ text: fechaFormatoCompleto(cliente[0]["vigencia"].split(" a ")[0]) + " a " + fechaFormatoCompleto(cliente[0]["vigencia"].split(" a ")[1]), style: 'textoTabla1' }], border: [false, false, false, false], colSpan: 3},
 							{},
 							{}
 						]
@@ -1798,7 +1798,7 @@ function imprimirPerifoneo(json){
 	console.log(json);
 	var cliente = json["cliente"];
 	var config = json["config"];
-
+console.log(config);
 	var docPerif = [
 			{
 				text: '\nTrábajo N°: ' + cliente["idtrabajo"] + '  - Sucursal: ' + cliente["nombre"] + "\n\n\n",
@@ -1816,7 +1816,7 @@ function imprimirPerifoneo(json){
 						],
 						[
 							{text: [{ text: 'Tipo: ', style: 'tituloTabla1' },{ text: cliente["tipo"], style: 'textoTabla1' }], border: [false, false, false, false]},
-							{text: [{ text: 'Vigencia: ', style: 'tituloTabla1' },{ text: cliente["vigencia"], style: 'textoTabla1' }], border: [false, false, false, false], colSpan: 3},
+							{text: [{ text: 'Vigencia: ', style: 'tituloTabla1' },{ text: fechaFormatoCompleto(cliente["vigencia"].split(" a ")[0]).toString() + " a " + fechaFormatoCompleto(cliente["vigencia"].split(" a ")[1]).toString(), style: 'textoTabla1' }], border: [false, false, false, false], colSpan: 3},
 							{},
 							{}
 						]
@@ -1867,7 +1867,7 @@ function imprimirPerifoneo(json){
 					widths: ['auto', 'auto', 'auto', '*', 'auto'],
 					body: [
 						[
-							{text: 'Fecha: ' + value.fecha, style: 'tituloTabla2', fillColor: '#BEBEBE'},
+							{text: 'Fecha: ' + fechaFormatoCompleto(value.fecha), style: 'tituloTabla2', fillColor: '#BEBEBE'},
 							{text: 'Hr inicio: ' + value.inicio.split(" ")[1].split(":")[0] + ":" + value.inicio.split(" ")[1].split(":")[1], style: 'tituloTabla2', fillColor: '#BEBEBE'},
 							{text: 'Hr Término: ' + value.fin.split(" ")[1].split(":")[0] + ":" + value.fin.split(" ")[1].split(":")[1], style: 'tituloTabla2', fillColor: '#BEBEBE'},
 							{text: 'Proveedor(es): ' + value.proveedores.replace(/,/gi, "\n"), style: 'tituloTabla2', fillColor: '#BEBEBE'},
@@ -1961,4 +1961,59 @@ function ordenarJSON(json, prop, tipo) {
             return (b[prop] > a[prop]) ? 1 : ((b[prop] < a[prop]) ? -1 : 0);
         }
     });
+}
+
+// FUNCION NUEVA 08-03-2018
+// CREACION DE NUEVA FEHCA FORMATO "Miercoles 20 de Febrero de 2018"
+function fechaFormatoCompleto(fecha){
+	var f = new Date(fecha).adicionarDia(1).toString().split(" "), dia = "", mes = "";
+    // GENERAR EL DIA
+    if(f[0] === "Mon"){
+    	dia = "Lunes";
+    }else if(f[0] === "Tue"){
+    	dia = "Martes";
+    }else if(f[0] === "Wed"){
+    	dia = "Miercoles";
+    }else if(f[0] === "Thu"){
+    	dia = "Jueves";
+    }else if(f[0] === "Fri"){
+    	dia = "Viernes";
+    }else if(f[0] === "Sat"){
+    	dia = "Sabado";
+    }else if(f[0] === "Sun"){
+    	dia = "Domingo";
+    }
+    // GENERAR EL MES
+    if(f[1] === "Jan"){
+    	mes = "Enero";
+    }else if(f[1] === "Feb"){
+    	mes = "Febrero";
+    }else if(f[1] === "Mar"){
+    	mes = "Marzo";
+    }else if(f[1] === "Apr"){
+    	mes = "Abril";
+    }else if(f[1] === "May"){
+    	mes = "Mayo";
+    }else if(f[1] === "Jun"){
+    	mes = "Junio";
+    }else if(f[1] === "Jul"){
+    	mes = "Julio";
+    }else if(f[1] === "Aug"){
+    	mes = "Agosto";
+    }else if(f[1] === "Sep"){
+    	mes = "Septiembre";
+    }else if(f[1] === "Oct"){
+    	mes = "Octubre";
+    }else if(f[1] === "Nov"){
+    	mes = "Noviembre";
+    }else if(f[1] === "Dic"){
+    	mes = "Diciembre";
+    }
+    return dia + " " + f[2] + " de " + mes + " de " + f[3];
+}
+// FUNCION QUE ADICIONA UN DIA - POR ERROR LA FECHA MOSTRADA POR JAVASCRIPT ES UN DIA antes
+Date.prototype.adicionarDia = function(days) {
+  var dat = new Date(this.valueOf());
+  dat.setDate(dat.getDate() + days);
+  return dat;
 }

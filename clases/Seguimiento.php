@@ -47,14 +47,33 @@
 			$id_device = $info['id_device'];
 			$id_service = $info['id_service'];
 
-			$consult = "SELECT id, latitud, longitud, date_time
+			/*$consult = "SELECT id, latitud, longitud, date_time
 						FROM geolocation 
 						WHERE id_device = '$id_device'
 						AND id_service = $id_service order by date_time";
 
 						// echo $consult;exit;
-			return $this->query_assoc($consult);
+			return $this->query_assoc($consult);*/
+			$consult["geo"] = $this->query_assoc("SELECT id, latitud, longitud, date_time
+						FROM geolocation 
+						WHERE id_device = '$id_device'
+						AND id_service = $id_service order by date_time");
 
+			/*$consult["ids"] = $this->query_assoc("SELECT MIN(id) AS Primero, MAX(id) AS Ultimo
+						FROM geolocation 
+						WHERE id_device = '$id_device'
+						AND id_service = $id_service order by date_time");*/
+			$consult["ids"] = $this->query_assoc("(SELECT id
+						FROM geolocation 
+						WHERE id_device = '$id_device'
+						AND id_service = $id_service order by date_time DESC LIMIT 1)
+							UNION ALL
+						(SELECT id
+						FROM geolocation 
+						WHERE id_device = '$id_device'
+						AND id_service = $id_service order by date_time ASC LIMIT 1)");
+
+			return $consult;
 		}
 
 		public function lvl3_todos($info){
@@ -62,14 +81,33 @@
 			$id_service = $info['id_service'];
 			$id_proveedor = $info['id_device'];
 
-			$consult = "SELECT id, latitud, longitud, date_time
+			/*$consult = "SELECT id, latitud, longitud, date_time
 						FROM geolocation 
 						WHERE id_service = '$id_service'
 						AND id_proveedor = $id_proveedor order by date_time";
 
 						// echo $consult;exit;
-			return $this->query_assoc($consult);
+			return $this->query_assoc($consult);*/
+			$consult["geo"] = $this->query_assoc("SELECT id, latitud, longitud, date_time
+						FROM geolocation 
+						WHERE id_service = '$id_service'
+						AND id_proveedor = $id_proveedor order by date_time");
 
+			/*$consult["ids"] = $this->query_assoc("SELECT MIN(id) AS Primero, MAX(id) AS Ultimo
+						FROM geolocation 
+						WHERE id_service = '$id_service'
+						AND id_proveedor = $id_proveedor");*/
+			$consult["ids"] = $this->query_assoc("(SELECT id
+						FROM geolocation 
+						WHERE id_service = '$id_service'
+						AND id_proveedor = $id_proveedor order by date_time DESC LIMIT 1)
+							UNION ALL
+						(SELECT id
+						FROM geolocation 
+						WHERE id_service = '$id_service'
+						AND id_proveedor = $id_proveedor order by date_time ASC LIMIT 1)");
+
+			return $consult;
 		}
 
 		public function getProveedoresImages($id){

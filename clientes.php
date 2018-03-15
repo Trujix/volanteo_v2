@@ -181,8 +181,8 @@
               </div>
 
               <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                <label for="">RFC</label><span style="color: red;">*</span>
-                <input class="form-control required" onkeyup="conMayusculas(this);" id="txt_rfc" name="txt_rfc" placeholder="Ej. TOMA280382HMXRPN01" type="text">
+                <label for="">RFC</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" onkeyup="conMayusculas(this);" id="txt_rfc" name="txt_rfc" placeholder="Ej. TOMA280382HMXRPN01" type="text">
                 
               </div>
             </div>
@@ -583,6 +583,7 @@
       <div class="modal-content">
 
         <div class="modal-header">
+          <button id="selectTodosPoligs" class="btn btn-xs btn-info"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Seleccionar todos</button>
           <button type="button" class="btn btn-xs btn-danger close" data-dismiss="modal"><span aria-hidden="true">Cerrar</span></button>
           <h4 class="modal-title">Asignar Poligonos a Sucursal</h4>
         </div>

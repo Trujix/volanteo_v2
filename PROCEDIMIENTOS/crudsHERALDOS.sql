@@ -1223,6 +1223,9 @@
 
 		DELETE FROM trabajos_sucursales
 		WHERE idtrabajo = _idtrabajo;
+
+		DELETE FROM config_trabajo_perifoneo
+		WHERE idtrabajo = _idtrabajo;
 	
 		SET _idconfig = (SELECT id FROM config_trabajo WHERE idtrabajo = _idtrabajo);
 

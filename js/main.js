@@ -78,10 +78,43 @@ function toast1(title, body, delay, type){
 }
 
 var cantAgregar = 0;
-function toastPreg(titulo, cant, idchosen, idtxt, txtTotal, arrIndex, selValue){
-	(new PNotify({
+function toastPreg(titulo, cant, idchosen, idtxt, txtTotal, arrIndex, selValue, tipo){
+	var cantTxt = '';
+	var sizeDiv = '';
+	var divHrsMins = '';
+	if(tipo === 'Perifoneo'){
+		cantTxt = cant + ' mins. - ' + (parseFloat(cant)/60).toString() + ' hrs.';
+		sizeDiv = '9';
+		divHrsMins = '<div class="col-md-3"><select class="formatoProvPaso3 form-control"><option value="1">Min</option><option value="2">Hrs</option></select></div>';
+	}else{
+		cantTxt = cant;
+		sizeDiv = '12';
+	}
+
+	contenido = '<div class="panel panel-default"><div class="panel-body"><h5>Cantidad limite: ' + cantTxt + '</h5><div class="row"><div class="col-md-' + sizeDiv + '"><input type="text" class="cantProvPaso3 form-control" autofocus></div>' + divHrsMins + '</div><p></p><div class="row"><div class="col-md-6" align="left"><button class="btn btn-sm btn-info" onclick="internalFuncAgrgCantMun(' + "'" + titulo + "','" + cant + "','" + idchosen + "','" +  idtxt + "','" +  txtTotal + "','" +  arrIndex + "','" + selValue + "','" + tipo + "'" + ')">Agregar cantidad</button></div><div class="col-md-6" align="right"><button class="btn btn-danger" onclick="cancelarAgrgCantMun(' + "'" + idchosen + "','" + idtxt + "'" + ')">Cancelar</button></div></div></div>';
+	new PNotify({
 	    title: 'Agregar a ' + titulo,
-	    text: 'Cantidad limite: ' + cant,
+	    text: contenido,
+	    hide: false,
+	    width: '450px',
+	    addclass: 'stack-modal',
+        stack: {'dir1': 'down', 'dir2': 'right', 'modal': true},
+        buttons: {
+	    	closer: false,
+	        sticker: false,
+	        cancel: false,
+	    },
+	    history: {
+	        history: false
+	    }
+	});
+	setTimeout(function(){
+		$('.cantProvPaso3').focus();
+	}, 500);
+
+		/*(new PNotify({
+	    title: 'Agregar a ' + titulo,
+	    text: 'Cantidad limite: ' + cantTxt,
 	    icon: 'glyphicon glyphicon-question-sign',
 	    type: 'warning',
 	    hide: false,
@@ -113,8 +146,24 @@ function toastPreg(titulo, cant, idchosen, idtxt, txtTotal, arrIndex, selValue){
 	        hide: true
 	    });
 	    cancelarAgrgCantMun(idchosen, idtxt);
-	});
+	});*/
 }
+function internalFuncAgrgCantMun(titulo, cant, idchosen, idtxt, txtTotal, arrIndex, selValue, tipo){
+	var val = '';
+	if(tipo === "Perifoneo"){
+		if(!isNaN($('.cantProvPaso3').val())){
+			if(parseInt($('.formatoProvPaso3').val()) > 1){
+				val = parseFloat($('.cantProvPaso3').val()) * 60;
+			}else{
+				val = parseInt($('.cantProvPaso3').val());
+			}
+		}
+	}else{
+		val = $('.cantProvPaso3').val();
+	}
+	AgrgCantMun(titulo, cant, idchosen, idtxt, txtTotal, arrIndex, val, selValue);
+}
+
 
 function resetForm(id){
 	$('#'+id).each (function(){

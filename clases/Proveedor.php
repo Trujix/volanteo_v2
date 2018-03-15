@@ -12,7 +12,7 @@
 			$verifMail = $this->query_assoc("SELECT idproveedor FROM proveedores WHERE ctacorreo = '$info->txt_correo'");
 			$res = $this->query_single_object($consult);
 
-			if($res->count == 0){
+			if($res->count == 0 || isset($info->txt_rfc)){
 				if(intval(count($verifMail)) > 0){
 					return 3;
 				}else{
@@ -42,7 +42,7 @@
 									'$info->txt_estadoF', 	'$info->txt_ciudadF', 
 									'$info->txt_municipioF','$info->txt_tarjeta', md5('$pass')
 								)";
-					// echo $consult; exit;
+					//echo $consult; exit;
 					$this->correoPass($info->txt_correo, $info->txt_nombre, $pass);
 					return $this->query($consult);
 				}

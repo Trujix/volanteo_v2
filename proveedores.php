@@ -194,8 +194,8 @@
               </div>
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">RFC</label><span style="color: red;">*</span>
-                <input class="form-control required" onkeyup="conMayusculas(this);" id="txt_rfc" name="txt_rfc" placeholder="Ej. TOMA280382HMXRPN01" type="text">
+                <label for="">RFC</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" onkeyup="conMayusculas(this);" id="txt_rfc" name="txt_rfc" placeholder="Ej. TOMA280382HMXRPN01" type="text">
                 
               </div>
 
@@ -263,43 +263,43 @@
               
 
             <div class="col-md-12 no-pading">
-              <div class="col-md-12">
-                <!-- <hr> -->
-                <h3 class="my-h3 header_acordeon" id="h_data_fac">Datos de Facturación</h3>
-                <!-- <span class="fa fa-chevron-down my-span"></span> -->
-                <hr>
+              <div class="col-md-4">
+                <h3 class="my-h3 header_acordeon" id="h_data_fac">Datos de Facturación</h3><hr>
+              </div>
+              <div class="col-md-8">
+                <h3><span id="datGen2DatFact" class="label label-info" style="cursor: pointer;">Llenar de "Datos Generales"</span></h3>
               </div>
             </div>
 
             <div class="col-md-12 no-pading acordeon" id="data_fac" style="display: none;">
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">Nombre o Razón Social </label><span style="color: red;">*</span>
-                <input class="form-control required" id="txt_nombreF" name="txt_nombreF" placeholder="Ej. Miguel Angel" type="text">
+                <label for="">Nombre o Razón Social </label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" id="txt_nombreF" name="txt_nombreF" placeholder="Ej. Miguel Angel" type="text">
                 
               </div>
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">RFC</label><span style="color: red;">*</span>
-                <input class="form-control required" onkeyup="conMayusculas(this);" id="txt_rfcF" name="txt_rfcF" placeholder="Ej. TOMA280382HMXRPN01" type="text">
+                <label for="">RFC</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" onkeyup="conMayusculas(this);" id="txt_rfcF" name="txt_rfcF" placeholder="Ej. TOMA280382HMXRPN01" type="text">
                 
               </div>
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">Calle</label><span style="color: red;">*</span>
-                <input class="form-control required" id="txt_calleF" name="txt_calleF" placeholder="Ej. Dr. Miguel Galindo" type="text">
+                <label for="">Calle</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" id="txt_calleF" name="txt_calleF" placeholder="Ej. Dr. Miguel Galindo" type="text">
                 
               </div>
 
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">Colonia</label><span style="color: red;">*</span>
-                <input class="form-control required" id="txt_coloniaF" name="txt_coloniaF" placeholder="Ej. Centro" type="text">
+                <label for="">Colonia</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" id="txt_coloniaF" name="txt_coloniaF" placeholder="Ej. Centro" type="text">
                 
               </div>
 
               <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
-                <label for="">No. Ext.</label><span style="color: red;">*</span>
-                <input class="form-control required" id="txt_noextF" name="txt_noextF" placeholder="Ej. 223" type="text">
+                <label for="">No. Ext.</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" id="txt_noextF" name="txt_noextF" placeholder="Ej. 223" type="text">
                 
               </div>
 
@@ -311,36 +311,36 @@
 
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">Codigo Postal</label><span style="color: red;">*</span>
-                <input class="form-control required" id="txt_cpF" name="txt_cpF" placeholder="Ej. 28000" type="text">
+                <label for="">Codigo Postal</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" id="txt_cpF" name="txt_cpF" placeholder="Ej. 28000" type="text">
                 
               </div>
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback" hidden>
-                <label for="">Pais</label><span style="color: red;">*</span>
-                <input class="form-control required" id="txt_paisF" name="txt_paisF" placeholder="Ej. Mexico" type="text" value="México">
+                <label for="">Pais</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" id="txt_paisF" name="txt_paisF" placeholder="Ej. Mexico" type="text" value="México">
                 
               </div>
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">Estado</label><span style="color: red;">*</span>
-                <select name="txt_estadoF" class="form-control required" id="txt_estadoF">
-                  <option value="null" selected disabled>Seleccione una opción</option>
+                <label for="">Estado</label><!-- <span style="color: red;">*</span> -->
+                <select name="txt_estadoF" class="form-control" id="txt_estadoF">
+                  <option value="0" selected disabled>Seleccione una opción</option>
                     <?php echo $estadosDomgeo; ?>
                 </select>
                 
               </div>
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">Localidad</label><span style="color: red;">*</span>
-                <input class="form-control required" id="txt_ciudadF" name="txt_ciudadF" placeholder="Ej. Colima" type="text">
+                <label for="">Localidad</label><!-- <span style="color: red;">*</span> -->
+                <input class="form-control" id="txt_ciudadF" name="txt_ciudadF" placeholder="Ej. Colima" type="text">
                 
               </div>
 
               <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                <label for="">Municipio</label><span style="color: red;">*</span>
-                <select name="txt_municipioF" class="form-control required" id="txt_municipioF">
-                  <option value="null" selected disabled>Seleccione una opción</option>
+                <label for="">Municipio</label><!-- <span style="color: red;">*</span> -->
+                <select name="txt_municipioF" class="form-control" id="txt_municipioF">
+                  <option value="0" selected disabled>Seleccione una opción</option>
                 </select>
                 
               </div>

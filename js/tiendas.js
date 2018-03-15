@@ -1260,12 +1260,21 @@
 	var poligonoVer;
 	var infoVentana;
 	var banderaPolig;
+
+	var todosPoligonosJSON = [];
 	function pintarPoligonos(polig){
 		coordsDefaultMapa();
 		poligonoVer = {};
 		banderaPolig = {};
+		todosPoligonosJSON = [];
 		var centro;
 		$.each(polig, function (p, elem){
+			// LLENAR TODOS LOS POLIGONOS - PARA USARSE EN CASO DE QUERER ASIGNAR TODOS LOS POLIGONOS
+			todosPoligonosJSON.push({
+				idPolig: elem.id,
+				nomPolig: elem.nomtxt
+			});
+
 			var poligCoords = elem.coords.split(';');
 			var colorPolig = "#" + elem.atributos;
 			var coordenadas = [];
@@ -1369,6 +1378,36 @@
 		poligonosJSON.elementos.quitarElemento('idpolig', idPolig);
 		infoVentana.close();
 	}
+
+	// FUNCION NUEVA 08/03/2018
+	// ASIGNAR TODOS LOS POLIGONOS EN PANTALLA
+	$(document).on('click', '#selectTodosPoligs', function(){
+		$.confirm({
+			title: 'Seleccionar todos los poligonos',
+			content: '¿Desea continuar?',
+			confirm: function(){
+				showSpinner();
+				var hecho = [];
+				poligonosJSON.elementos.quitarElemento('mun', edoMunGlobal.split(':')[1]);
+				$(todosPoligonosJSON).each(function (key, value){
+					poligonosJSON['elementos'].push({
+						idpolig: value.idPolig,
+						nompolig: value.nomPolig,
+						edo: edoMunGlobal.split(':')[0],
+						mun: edoMunGlobal.split(':')[1]
+					});
+					hecho.push($.ajax({}));
+				});
+				$.when.apply($, hecho).done(function () {
+					$('#modalPoligonos').modal('hide');
+					removeSpinner();
+				});
+			},
+			cancel: function(){			
+			}
+		});
+	});
+
 
 	// ********* FUNCIONES MISCELANEAS ***********
 	// VALIDACION DE NUMERO DE WHATSAPP

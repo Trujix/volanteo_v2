@@ -576,6 +576,13 @@
 					'$detallesInsert', 'PASO2'
 				)";
 				if($this->query($consult2)){
+					// RESTAURACION PARA TRABAJOS DE PERIFONEO
+					$idsPerif = $this->query_assoc("SELECT CTP.id, CTP.idsucursal FROM config_trabajo_perifoneo CTP WHERE CTP.idtrabajo = $idP");
+					for($p = 0; $p < count($idsPerif); $p++){
+						$this->query("DELETE FROM config_trabajo_detalle_perifoneo WHERE idconfig IN (SELECT id FROM config_trabajo_detalle WHERE idconfig = {$idsPerif[$p]['id']} AND sucursal = {$idsPerif[$p]['idsucursal']})");
+						$this->query("DELETE FROM config_trabajo_detalle WHERE idconfig = {$idsPerif[$p]['id']} AND sucursal = {$idsPerif[$p]['idsucursal']}");
+					}
+					
 					$restTabs = $this->query("CALL SP_RESTAURARTRABAJOSANEXAS('$idP')");
 					$this->query("CALL SP_ALTATRABAJOPENDIENTES('$idP', '$tipo')");
 					return "EXITO";

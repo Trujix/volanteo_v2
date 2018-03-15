@@ -349,7 +349,7 @@
 	    	if(params.selected){
 	    		/*var accion = '';
 		    	if(params.selected){accion = 'sumar';}else if(params.deselected){accion = 'borrar';}*/
-		    	toastPreg(mun, rest, selectId, optSelec, 'txt_cant'+selectTxt, indexArr, optSelec);
+		    	toastPreg(mun, rest, selectId, optSelec, 'txt_cant'+selectTxt, indexArr, optSelec, $('#select_servicio option:selected').text());
 	    	}else if(params.deselected){
 	    		repetidosProv[indexArr][2] = parseInt(repetidosProv[indexArr][2]) + parseInt(optSelec.toString().split('_')[0]);
 	    		
@@ -826,22 +826,24 @@
 
 // Funciones Paso 3 -----------------------------------------------------
 	function AgrgCantMun(tit, can, chosen, txt, txtTot, arrIn, val, selVal){
-		if((parseInt(val) > parseInt(can)) || isNaN(val) || val === '' || val === undefined){
+		if((parseFloat(val) > parseInt(can)) || isNaN(val) || val === '' || val === undefined || parseFloat(val) === 0){
 			PNotify.removeAll();
-			toastPreg(tit, can, chosen, txt, txtTot, arrIn, selVal);
+			toastPreg(tit, can, chosen, txt, txtTot, arrIn, selVal, $('#select_servicio option:selected').text());
 		}else{		
 			var cantAnt;
 			if($('#'+txtTot).val() === ''){cantAnt = 0;}else{cantAnt = $('#'+txtTot).val();}
-			var suma = parseInt(cantAnt) + parseInt(val);
+			var suma = parseInt(cantAnt) + parseFloat(val);
 
 			$('#'+txtTot).val(suma);
-			repetidosProv[arrIn][2] = parseInt(can) - parseInt(val);
+			repetidosProv[arrIn][2] = parseInt(can) - parseFloat(val);
 			$('#'+chosen+" option[value='"+txt+"']").prop('value', val + '_' + selVal.split('_')[1]);
+			PNotify.removeAll();
 		}
 	}
 	function cancelarAgrgCantMun(chosen, txt){
 		$('#'+chosen+" option[value='"+txt+"']").prop('selected', false);
 		$('#'+chosen).trigger("chosen:updated");
+		PNotify.removeAll();
 	}
 
 // Funciones Wizard -----------------------------------------------------
@@ -876,6 +878,10 @@
 
         switch(from) {
             case 1:
+            	if(to == 3){
+            		desplegarPaso3();
+            	}
+
             		step1 = {
 	            		txt_cliente  	:  $('#txt_cliente').val(),
 	            		txt_fecha 	 	:  $('#txt_fecha').val(),
@@ -974,6 +980,10 @@
             	if(to == 1)
             		return true;
 
+            	if(to == 3){
+            		desplegarPaso3();
+            	}
+
             	if(accionTrabajos !== 'EDITAR'){
             		step2 = bloquesJSON;
             	}
@@ -1057,12 +1067,12 @@
 									                '<div class="x_title">'+
 									                  '<h2 id="header_'+cont+'">'+header+'</h2>'+
 									                  '<ul class="nav navbar-right panel_toolbox" style="min-width: 0px">'+
-									                    '<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a>'+
+									                    '<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>'+
 									                    '</li>'+
 									                  '</ul>'+
 									                  '<div class="clearfix"></div>'+
 									                '</div>'+
-									                '<div id="" class="x_content table-responsive" style="display: none">'+
+									                '<div id="" class="x_content table-responsive" style="display: block;">'+
 														'<input type="text" id="txt_status'+cont+'" hidden>'+
 														'<table class="table table-striped projects">'+
 														  '<thead id="theadStep3Z'+cont+'"></thead>'+
@@ -1280,11 +1290,16 @@
 								}
 								console.log(repetidosProv);
 								console.log(step2);
+
+								/*setTimeout(function(){
+									desplegarPaso3();
+								}, 500);*/
 							}
 						});
 						editStep3 = false;
 	            		return true;
             		}else{
+            			//desplegarPaso3();
             			return true;
             		}
             	}else{
@@ -1434,6 +1449,7 @@
             case 4:
 
             	if(to == 3)
+            		desplegarPaso3();
             		return true;
                 break;
         }
@@ -1627,4 +1643,11 @@ function calculadora2Paso2F2(total){
 		removeSpinner();
 		step1["txt_cantidadP1"] = total;
     });	
+}
+
+function desplegarPaso3(){
+	console.log($('.collapse-link i').attr("class") !== "fa fa-chevron-up");
+	if($('.collapse-link i').attr("class") !== "fa fa-chevron-up"){
+		$('.collapse-link').click();
+	}
 }

@@ -762,12 +762,25 @@ var cantMunInfoWindow;
 			poligonoVer["pol_" + elem.id].setMap(miMapaGlobal);
 		});
 	}
+	// CONTROL DEL BOTON DE FULL SCREEN DEL MAPA
+	var zoomGoogleMap = false;
+	$(document).on('click', 'button[draggable="false"]', function(){
+		if(zoomGoogleMap)
+			zoomGoogleMap = false;
+		else
+			zoomGoogleMap = true;
+	});
+	function ejecutarZoomGM(){
+		if(zoomGoogleMap)
+			$('button[draggable="false"]').click();
+	}
 
 	var cantGLOBAL = 0;
 	function asignarPoligono(idPolig, nomPolig, cant){
 		if(parseInt($('#totalRest').text()) === 0){
 			toast1("Error cantidad", "Ha superado la cantidad disponible.", 8000, "error");
 		}else if(parseInt(cant) > parseInt($('#totalRest').text())){
+			ejecutarZoomGM();
 			$.confirm({
 				title: 'Cantidad insuficiente',
 				content: '<b>La cantidad de la zona seleccionada es superior a la restante:</b><br>¿Desea ajustar la cantidad a '+$('#totalRest').text()+'?',
@@ -778,6 +791,7 @@ var cantMunInfoWindow;
 				cancel: function(){}
 			});
 		}else{
+			ejecutarZoomGM();
 			asignarPoligonoTrue(idPolig, nomPolig, cant);
 		}
 	}

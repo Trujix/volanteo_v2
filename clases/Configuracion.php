@@ -46,7 +46,7 @@
 				$password = md5($pass);
 
 			if($this->query("CALL SP_UPDATEPASS('{$info['id']}', '$password', '{$info['tabla']}')")){
-				$this->resetPass($info['mail'], $info['nombre'], $password);
+				$this->resetPass($info['mail'], $info['nombre'], $pass);
 				return "EXITO";
 			}else{
 				return "ERRORGUARDAR";
