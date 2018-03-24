@@ -547,5 +547,7 @@ $(document).on('click', '#datGen2DatFact', function(){
 
 	$('#txt_estadoF').val($('#txt_estado').val());
 	switchMuncicipio = parseFloat($('#txt_municipio').val());
-	$('#txt_estadoF').change();
+	if(!isNaN(switchMuncicipio)){
+		$('#txt_estadoF').change();
+	}
 });

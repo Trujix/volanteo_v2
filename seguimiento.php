@@ -231,6 +231,11 @@
           <div id="map" style="width:860px; height:500px;"></div>
         </div>
         <div class="modal-footer">
+          <div class="a-la-izq">
+            <img src="images/banderasPolig/inicio.png"><span style="color: #37BC9B"><b>&nbsp;Inicio recorrido</b></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/banderasPolig/fin.png"><span style="color: #F68842"><b>&nbsp;Fin recorrido</b></span>
+          </div>
           <button type="button" id="" class="btn btn-warning col-md-5 a-la-der" data-dismiss="modal">Cerrar</button>
         </div>
 
